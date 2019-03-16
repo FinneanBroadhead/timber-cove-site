@@ -381,7 +381,7 @@ body {
 #timber-news-header .news-heading {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-150%);
 }
 
 .in-the-numbers-box {
