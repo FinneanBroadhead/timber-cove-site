@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timber Cove</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/pixi.min.js"></script>
+    <script src="assets/js/Tink.js"></script>
+    <script src="assets/js/Sprite.js"></script>
+    <script src="assets/js/Images.js"></script>
+    <script src="assets/js/Loader.js"></script>
+    <script src="assets/js/HomeDiagram.js"></script>
+    <script src="assets/js/Main.js"></script>
+    <script src="assets/js/SceneManager.js"></script>
+    <script src="assets/js/Nav.js"></script>
+</head>
+<body>
+
+    <!-- <canvas id="map-canvas"></canvas> -->
+    <div id="map-canvas"></div>
+    
+    <div id="canvas-overlay">
+        <div class="header-piece">
+            <h1>Explore the Home</h1>
+        </div>
+
+        <div id="side-nav" class="shadow-effect-8">
+            <div class="nav-buttons">
+                <div class="nav-header">
+                    <h1>All Rooms</h1>
+                </div>
+                <a class="nav-link">
+                    Button test
+                </a>
+                <a class="nav-link">
+                    Button test two
+                </a>
+                <a class="nav-link">
+                    Button test two
+                </a>
+                <a class="nav-link">
+                    Button test two
+                </a>
+                <a class="nav-link">
+                    Button test two
+                </a>
+            </div>
+
+            <div class="toggle-button" onclick="toggleNav();">
+                <p><i class="fas fa-angle-left"></i></p>
+            </div>
+        </div>
+
+        <div class="nav-open-button active" onclick="toggleNav();">
+            <p><i class="fas fa-angle-right"></i></p>
+        </div>
+
+        <div id="level-changer">
+            <div class="level-changer-buttons">
+                <div class="level-button increase-button">
+                    <i class="fas fa-angle-up"></i>
+                </div>
+                <div class="level-button decrease-button">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+            <hr>
+            <div id="current-level-text">
+                Current Level
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

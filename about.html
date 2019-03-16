@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Timber Cove</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/shadows.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/fliznav.css">
+  <link rel="stylesheet" href="assets/css/faq.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/image-grid.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="assets/css/webflow.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/about.js"></script>
+  <script src="assets/js/jquery.scrollTo.min.js" type="text/javascript"></script>
+  <script src="assets/js/jquery.localScroll.min.js" type="text/javascript"></script>
+
+  <script>
+    $(document).ready(function() {
+      var navOpen="false";
+      // Enable smooth scroll with click-to-navigate
+      $.localScroll({duration:300});
+  console.log('rdy')
+    });
+  
+  
+    </script>
+</head>
+
+<body onload="triggerNav();">
+  <nav>
+    <ul>
+      <li class="nav-link"><a href="index">Home</a></li>
+      <li class="nav-link"><a href="interactive-floormap/blueprint-main.html">Explore the Property</a></li>
+      <li class="nav-link"><a href="about.html">About</a></li>
+      <li class="nav-link"><a href="#">Attractions</a></li>
+      <li class="nav-link"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="about-landing">
+    <div class="jumbotron-gradient">
+      <div class="video-overlay"></div>
+      <!-- <video playsinline autoplay muted loop id="bgvid2">
+        <source src="assets/imgs/Entry-bg.jpg" type="video/mp4">
+      </video> -->
+      <img src="assets/imgs/Entry-bg.jpg" alt="" id="bgvid2">
+      <div class="landing-header">
+        <h1 class="heading">Timber Cove:</h1>
+        <h1 class="heading-2">About the Resort</h1>
+
+      </div>
+      <!-- <button onclick="" class="enter-site-button"><h5>Explore the Home</h5></button> -->
+      <a href="#work">
+        <div class="arrow bounce">
+
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- All info pages -->
+  <section id="info-pages">
+
+    <!-- Content development -->
+    <!-- <a class="name-anchor" name="content-development" data-name="Content Development"> -->
+    <div class="info-section">
+      <div class="section-header header-left top-section-header">
+        <div class="container" data-aos="fade-right">
+          <h1>History of Timber Cove<i class="fas fa-pencil-alt"></i></h1>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row info-row">
+          <div class="col-md-6 info-col info-col-left">
+            <span class="column-highlight"></span>
+            <p>
+              <span class="mini-header" style="margin-bottom: 25px;">
+                How it all came together
+              </span>
+              <br>
+              <br>
+              <span class="border-piece"></span>
+              When Bill Broadhead and Julie McCoy found a piece of land just an hour and a half east of the city on
+              Lake Cle Elum, they weren’t in the market for a mountain retreat. Broadhead was looking for a spot to
+              build a snowmobile storage shed. But the site, in the Cascade Mountains near Roslyn, blew him away. “When
+              I saw that piece of land, I knew it was a once-in-a-lifetime opportunity,” he says. The two consulted
+              with builders Chris Jansen and Travis Gibson, who brought in Seattle-based firm Johnston Architects to
+              make their second home a reality. Nicknamed “Base Camp,” it was completed in 2014, </p>
+          </div>
+          <div class="half-image half-image-right">
+            <img src="assets/imgs/theater.jpg">
+            <div class="image-overlay">
+              <div class="overlay-text">
+                <h2><i class="fas fa-history"></i></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engaging Posts -->
+    <!-- <a class="name-anchor" name="engaging-posts" data-name="Creating Engaging Posts"> -->
+    <div class="info-section">
+      <div class="section-header header-right">
+        <div class="container" data-aos="fade-left">
+          <h1><i class="fas fa-camera"></i>Environmentally Friendly</h1>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row info-row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6 info-col info-col-right">
+            <span class="column-highlight"></span>
+            <p>
+              <span class="mini-header">
+                Powered by renewable energy
+              </span>
+              <br>
+              <span class="border-piece"></span>
+
+              Ninety percent of the home’s hot water and 30 percent of the radiant heating comes from a solar thermal
+              array. “We use a 1,000-square-foot solar array to heat water to about 200 degrees Fahrenheit and then we
+              store it in large, underground, insulated tanks,” says Architect, Ray Johnston “Those tanks are
+              essentially a giant
+              hot water battery that we pull heat from during colder and darker months.”
+
+            </p>
+          </div>
+          <div class="half-image half-image-left">
+            <img src="assets/imgs/solar-about.jpg">
+            <div class="image-overlay">
+              <div class="overlay-text">
+                <h2><i class="fas fa-solar-panel"></i></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mid section -->
+    <!-- <a class="name-anchor" name="what-we-do" data-name="What We Do"> -->
+    <div class="mid-section">
+      <div class="section-header header-left">
+        <div class="container" data-aos="fade-right">
+          <h1>Things you can control from your phone:</h1>
+        </div>
+      </div>
+      <div class="container-fluid">
+
+        <!-- Rotating words -->
+        <br>
+        <div class="rolling-words">
+          <div id="rollingword-1" class="rolling-word">Speakers</div>
+          <div id="rollingword-6" class="rolling-word">Lighting</div>
+          <div id="rollingword-3" class="rolling-word">Theater</div>
+          <div id="rollingword-4" class="rolling-word">TV's</div>
+          <div id="rollingword-5" class="rolling-word">Ceiling Fans</div>
+          <div id="rollingword-7" class="rolling-word">Temperature</div>
+        </div>
+
+        <!-- Social bar -->
+        <div class="socials-holder">
+          <div class="social-piece">
+              <i class="fas fa-volume-up icon"></i>
+          </div>
+          <div class="social-piece">
+              <i class="fas fa-lightbulb icon"></i>
+          </div>
+          <div class="social-piece">
+              <i class="fas fa-film icon"></i>
+          </div>
+          <div class="social-piece">
+              <i class="fas fa-wind icon"></i>
+          </div>
+          <div class="social-piece">
+              <i class="fas fa-volume-up icon"></i>
+          </div>
+          <div class="social-piece">
+              <i class="fas fa-volume-up icon"></i>
+          </div>
+          <div class="social-piece">
+              <i class="fas fa-volume-up icon"></i>
+          </div>
+        </div>
+
+        <!-- Orange toggleable gradient -->
+        <div class="section-gradient"></div>
+      </div>
+    </div>
+
+
+    <!-- Growing Your Audience -->
+    <!-- <a class="name-anchor" name="growing-audience" data-name="Growing Your Audience"> -->
+    <div class="info-section">
+      <div class="section-header header-left">
+        <div class="container" data-aos="fade-right">
+          <h1>Surrounding Activities
+            <i class="fas fa-swimmer"></i>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row info-row">
+          <div class="col-md-6 info-col info-col-left">
+            <span class="column-highlight"></span>
+            <p>
+              <span class="mini-header">
+                The most funfilled area you've never heard of
+              </span>
+              <br>
+              <br>
+              <span class="border-piece"></span>
+              In the surrounding area of this retreat, there are many things to do. For hiking, the #1 snowshoe trail in the world is right across the street. As far as clif jumping, snowmobiling and other great hikes go there is the beautiful cle elum river up north of the house.
+              Which has snowmobile/hiking trails leading up into the mountains, campgrounds perfect for experiencing the outdoors, spots to float the rever by means of inter tube and also cliff jump into the river. If you want to have a day out on the lake driving a boat,
+              a jet ski or maybe take snowmobiles into the mountain trails, Shaun Parker over at cascade playtime rentals is your guy. You can find the location of Cascade Playtime in the around the area section of the site.
+            </p>
+          </div>
+          <div class="half-image half-image-right">
+            <img src="assets/imgs/about-cliff-jump.jpg">
+            <div class="image-overlay">
+              <div class="overlay-text">
+                <h2><i class="fas fa-heart"></i></h2>
+              </div>
+            </div>
+          </div>r
+        </div>
+      </div>
+    </div>
+
+    <!-- Customer Engagement -->
+    <!-- <a class="name-anchor" name="customer-engagement" data-name="Customer Engagement"> -->
+
+    <!-- Social Meda Ad Setup And Management -->
+    <!-- <a class="name-anchor" name="social-media-management" data-name="Ad Setup & Management"> -->
+    <!-- Monthly Reporting -->
+    <!-- <a class="name-anchor" name="what-we-do"> -->
+
+    <div id="faq">
+      <div class="container faq-border-container">
+        <span class="faq-border-piece"></span>
+      </div>
+
+      <div class="container faq_section">
+        <div class="FaQ_Each">
+          <section class="box">
+            <span>
+              <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
+              <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
+            </span>
+            &nbsp;&nbsp;
+            <span>
+              Where’s the item I ordered?</span>
+          </section>
+          <section class="draw">
+            
+            <br>
+            <br>
+            PLEASE NOTE: DO NOT CHANGE YOUR USERNAME ONCE YOU MAKE AN ORDER. YOUR ACCOUNT MUST REMAIN ON PUBLIC AT ALL
+            TIMES.
+            <br><strong>IT CANNOT BE PRIVATE. </strong>
+            It will delay the process and cause problems with your delivery. If you have any questions please email us
+            at Sales@tweetangels.com. Due to high volumes, sometimes orders get delayed and take longer then the
+            Delivery Time Stated on the Product Cards. Please keep in mind we are working as fast as we can to ensure
+            you get your order and everything you paid for! Sending us an email and waiting for a response is the best
+            way to reach us if nobody is available on the phone.
+            Thank you!
+          </section>
+        </div>
+        <div class="FaQ_Each">
+          <section class="box">
+            <span>
+              <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
+              <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
+            </span>
+            &nbsp;&nbsp;
+            <span>Can I re-sell your followers service and make money?
+            </span>
+          </section>
+          <section class="draw">
+            Yes, and you should. Our prices are the best in the industry and our Guarantee is unmatched. You can charge
+            your clients more, then order from us. We also have a great Affiliate program where you can earn
+            commission. Click the link in the Footer.
+          </section>
+        </div>
+        <div class="FaQ_Each">
+          <section class="box">
+            <span>
+              <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
+              <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
+            </span>
+            &nbsp;&nbsp;<span>Is it safe?</span>
+          </section>
+          <section class="draw">
+            <strong>Yes, it is 100% Safe</strong>
+          </section>
+        </div>
+        <div class="FaQ_Each">
+          <section class="box">
+            <span>
+              <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
+              <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
+            </span>
+            &nbsp;&nbsp;<span>Do I need to follow back?</span>
+          </section>
+          <section class="draw">
+            No, there’s no need to follow back your new followers unless you want to.
+          </section>
+        </div>
+        <div class="FaQ_Each">
+          <section class="box">
+            <span>
+              <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
+              <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
+            </span>
+            &nbsp;&nbsp;<span>Is your service confidential?</span>
+          </section>
+          <section class="draw">
+            Yes, 100% confidential. We will never make public that you acquired followers from us or any other details.
+          </section>
+        </div>
+        <div class="FaQ_Each">
+          <section class="box">
+            <span>
+              <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
+              <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
+            </span>
+            &nbsp;&nbsp;<span>Do you offer any gaurentee?</span>
+          </section>
+          <section class="draw">
+            Yes, you will get 100% of your money back if we don’t deliver the number of followers you purchased.
+          </section>
+        </div>
+        <div class="FaQ_Each">
+          <section class="box">
+            <span>
+              <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
+              <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
+            </span>
+            &nbsp;&nbsp;<span>How will you add my newly aquired followers?</span>
+          </section>
+          <section class="draw">
+            TweetAngels uses custom built machine learning algorithms to get the attention of Targeted Users (*if you
+            buy our Targeted Followers) on all Social Media Profiles and get them to follow you without you having to
+            follow them. We have the ability to Target by multiple Keywords, Industries, and locations to get the right
+            people to follow your profiles.
+          </section>
+        </div>
+        <div class="FaQ_Each">
+          <section class="box">
+            <span>
+              <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
+              <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
+            </span>
+            &nbsp;&nbsp;<span>Will the followers be delivered gradually over time or all at once?</span>
+          </section>
+          <section class="draw">
+            Every service differs in Delivery Time. On Every Price Card it shows the Delivery time of the service. Some
+            orders will be added within One day and others are a Drip Feed Process so growth happens everyday.
+          </section>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+
+
+</body>

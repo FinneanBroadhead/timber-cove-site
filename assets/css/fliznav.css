@@ -1,0 +1,39 @@
+/* This class is added on scroll */
+.fixed {
+	position: fixed;
+	top: 0;
+	height: 70px;
+	z-index: 1;
+}
+/* Navigation Settings */
+nav {
+	position: absolute;
+	bottom: 0;
+  width: 100%;
+  text-align: center;
+	height: 70px;
+	background: #fff;
+}
+
+nav .nav-link {
+	display: inline-block;
+  padding: 24px 10px;
+  text-align: center;
+}
+
+nav .nav-link a {
+	color: #757575;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (orientation: portrait) {
+
+	nav li {
+		padding: 24px 4px;
+	}
+
+	nav li a {
+		font-size: 2vw;
+	}
+
+}
