@@ -405,6 +405,7 @@ text area {
   position: relative;
   margin-top: 75px;
   padding: 0 10px;
+  background-color: white;
 }
 
 .work-block {
@@ -419,9 +420,6 @@ text area {
 }
 
 .work-block.disabled {
-  /* filter: brightness(0.8) !important; */
-  /* filter: blur(2px); */
-  /* opacity: 0.1; */
   opacity: 1;
 }
 
