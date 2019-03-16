@@ -451,7 +451,6 @@ text area {
   -webkit-filter: --secondary(100%);
   filter: --secondary(100%);
   transform: scale(1.05);
-  /* transition-timing-function: cubic-bezier(.4,-0.9,0,1.75); */
 }
 
 .work-info {
@@ -814,6 +813,13 @@ text area {
 
 #footer li a:hover {
   color: var(--primary)
+}
+
+@media (orientation: portrait) {
+  .work-info p {
+    font-size: 1.7vh;
+    transform: translateY(25%);
+  }
 }
 
 [id="404"] {
