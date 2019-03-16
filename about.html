@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/css/fliznav.css">
   <link rel="stylesheet" href="assets/css/faq.css">
   <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/image-grid.css">
@@ -28,6 +29,7 @@
   <script src="assets/js/about.js"></script>
   <script src="assets/js/jquery.scrollTo.min.js" type="text/javascript"></script>
   <script src="assets/js/jquery.localScroll.min.js" type="text/javascript"></script>
+  <script src="assets/js/aos.js"></script>
 
   <script>
     $(document).ready(function() {
@@ -79,7 +81,7 @@
     <!-- Content development -->
     <!-- <a class="name-anchor" name="content-development" data-name="Content Development"> -->
     <div class="info-section">
-      <div class="section-header header-left top-section-header">
+      <div class="section-header header-left top-section-header" data-tilt data-tilt-perspective="3000" data-tilt-speed="2500">
         <div class="container" data-aos="fade-right">
           <h1>History of Timber Cove<i class="fas fa-pencil-alt"></i></h1>
         </div>
@@ -117,7 +119,7 @@
     <!-- Engaging Posts -->
     <!-- <a class="name-anchor" name="engaging-posts" data-name="Creating Engaging Posts"> -->
     <div class="info-section">
-      <div class="section-header header-right">
+      <div class="section-header header-right" data-tilt data-tilt-perspective="3000" data-tilt-speed="2500">
         <div class="container" data-aos="fade-left">
           <h1><i class="fas fa-camera"></i>Environmentally Friendly</h1>
         </div>
@@ -131,6 +133,7 @@
               <span class="mini-header">
                 Powered by renewable energy
               </span>
+              <br>
               <br>
               <span class="border-piece"></span>
 
@@ -157,7 +160,7 @@
     <!-- Mid section -->
     <!-- <a class="name-anchor" name="what-we-do" data-name="What We Do"> -->
     <div class="mid-section">
-      <div class="section-header header-left">
+      <div class="section-header header-left" data-tilt data-tilt-perspective="3000" data-tilt-speed="2500">
         <div class="container" data-aos="fade-right">
           <h1>Things you can control from your phone:</h1>
         </div>
@@ -190,7 +193,7 @@
               <i class="fas fa-wind icon"></i>
           </div>
           <div class="social-piece">
-              <i class="fas fa-volume-up icon"></i>
+              <i class="fas fa-thermometer-half icon"></i>
           </div>
           <div class="social-piece">
               <i class="fas fa-volume-up icon"></i>
@@ -209,7 +212,7 @@
     <!-- Growing Your Audience -->
     <!-- <a class="name-anchor" name="growing-audience" data-name="Growing Your Audience"> -->
     <div class="info-section">
-      <div class="section-header header-left">
+      <div class="section-header header-left" data-tilt data-tilt-perspective="3000" data-tilt-speed="2500">
         <div class="container" data-aos="fade-right">
           <h1>Surrounding Activities
             <i class="fas fa-swimmer"></i>
@@ -252,11 +255,15 @@
     <!-- <a class="name-anchor" name="what-we-do"> -->
 
     <div id="faq">
+        <div class="heading">
+            <h1>Frequently Asked Questions</h1>
+          </div>
       <div class="container faq-border-container">
         <span class="faq-border-piece"></span>
       </div>
 
       <div class="container faq_section">
+        
         <div class="FaQ_Each">
           <section class="box">
             <span>
@@ -265,21 +272,12 @@
             </span>
             &nbsp;&nbsp;
             <span>
-              Where’s the item I ordered?</span>
+              Where can we schedule a visit to Timber Cove?
+              </span>
           </section>
           <section class="draw">
-            
-            <br>
-            <br>
-            PLEASE NOTE: DO NOT CHANGE YOUR USERNAME ONCE YOU MAKE AN ORDER. YOUR ACCOUNT MUST REMAIN ON PUBLIC AT ALL
-            TIMES.
-            <br><strong>IT CANNOT BE PRIVATE. </strong>
-            It will delay the process and cause problems with your delivery. If you have any questions please email us
-            at Sales@tweetangels.com. Due to high volumes, sometimes orders get delayed and take longer then the
-            Delivery Time Stated on the Product Cards. Please keep in mind we are working as fast as we can to ensure
-            you get your order and everything you paid for! Sending us an email and waiting for a response is the best
-            way to reach us if nobody is available on the phone.
-            Thank you!
+            You can create a booking on our VRBO page, to find more information checkout <a href="contact.html">our bookings page.</a>
+            We are usually pretty booked, so if you have a date in mind make sure you put yourself down before the next guy does.
           </section>
         </div>
         <div class="FaQ_Each">
@@ -289,13 +287,11 @@
               <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
             </span>
             &nbsp;&nbsp;
-            <span>Can I re-sell your followers service and make money?
+            <span>Are dogs allowed?
             </span>
           </section>
           <section class="draw">
-            Yes, and you should. Our prices are the best in the industry and our Guarantee is unmatched. You can charge
-            your clients more, then order from us. We also have a great Affiliate program where you can earn
-            commission. Click the link in the Footer.
+            No, we have a strict no dogs policy.
           </section>
         </div>
         <div class="FaQ_Each">
@@ -304,10 +300,10 @@
               <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
               <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
             </span>
-            &nbsp;&nbsp;<span>Is it safe?</span>
+            &nbsp;&nbsp;<span>Is Timber Cove open year round?</span>
           </section>
           <section class="draw">
-            <strong>Yes, it is 100% Safe</strong>
+            <strong>Yes, the house is avaliable for rent throughout the whole year</strong>
           </section>
         </div>
         <div class="FaQ_Each">
@@ -316,10 +312,11 @@
               <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
               <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
             </span>
-            &nbsp;&nbsp;<span>Do I need to follow back?</span>
+            &nbsp;&nbsp;<span>Where can I find things to do around town?</span>
           </section>
           <section class="draw">
-            No, there’s no need to follow back your new followers unless you want to.
+              Theres much to do in the area, to find more information check out <a href="attractions.html">our nearby attractions page.</a>
+              We are usually pretty booked, so if you have a date in mind make sure you put yourself down before the next guy does.
           </section>
         </div>
         <div class="FaQ_Each">
@@ -328,10 +325,10 @@
               <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
               <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
             </span>
-            &nbsp;&nbsp;<span>Is your service confidential?</span>
+            &nbsp;&nbsp;<span>Is the property private and concealed from the outside world?</span>
           </section>
           <section class="draw">
-            Yes, 100% confidential. We will never make public that you acquired followers from us or any other details.
+            Yes, while you still have neighbors, all other houses on the street have a large amount of seperation between properties.
           </section>
         </div>
         <div class="FaQ_Each">
@@ -340,10 +337,10 @@
               <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
               <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
             </span>
-            &nbsp;&nbsp;<span>Do you offer any gaurentee?</span>
+            &nbsp;&nbsp;<span>Lorem</span>
           </section>
           <section class="draw">
-            Yes, you will get 100% of your money back if we don’t deliver the number of followers you purchased.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repudiandae veniam nostrum fugit ipsam alias sint perferendis, nobis quod quibusdam est, exercitationem animi, recusandae aperiam beatae molestias libero quia facilis?
           </section>
         </div>
         <div class="FaQ_Each">
@@ -352,13 +349,10 @@
               <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
               <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
             </span>
-            &nbsp;&nbsp;<span>How will you add my newly aquired followers?</span>
+            &nbsp;&nbsp;<span>Lorem?</span>
           </section>
           <section class="draw">
-            TweetAngels uses custom built machine learning algorithms to get the attention of Targeted Users (*if you
-            buy our Targeted Followers) on all Social Media Profiles and get them to follow you without you having to
-            follow them. We have the ability to Target by multiple Keywords, Industries, and locations to get the right
-            people to follow your profiles.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat vel sequi impedit totam eum quo voluptatem in consequuntur nisi aperiam. Hic provident cumque itaque voluptate, architecto sapiente explicabo facilis possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure rerum enim velit hic cum. Nostrum aut natus iste eaque deleniti dolores, officiis aspernatur magnam, id beatae architecto incidunt eveniet.
           </section>
         </div>
         <div class="FaQ_Each">
@@ -367,11 +361,10 @@
               <i class="fa fa-plus faq-icon" aria-hidden="true"></i>
               <i class="fa fa-minus faq-icon-dropped" id="other" aria-hidden="true"></i>
             </span>
-            &nbsp;&nbsp;<span>Will the followers be delivered gradually over time or all at once?</span>
+            &nbsp;&nbsp;<span>Lorem...</span>
           </section>
           <section class="draw">
-            Every service differs in Delivery Time. On Every Price Card it shows the Delivery time of the service. Some
-            orders will be added within One day and others are a Drip Feed Process so growth happens everyday.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, harum provident quos, eveniet cum aut magni laudantium, voluptate ex a rem sunt eos ullam. Fugiat quis commodi facilis sapiente reprehenderit.
           </section>
         </div>
       </div>
