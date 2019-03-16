@@ -16,9 +16,16 @@ $(document).ready(function() {
             });
         });
         var navOpen = "false";
-        // Enable smooth scroll with click-to-navigate
-        $.localScroll({duration:300});
+
     });
+    
+    // Enable smooth scroll with click-to-navigate
+    $.localScroll({duration:300});
+
+	AOS.init({
+		offset: 200,
+		easing: 'ease-out-quart'
+	});
 })
 
 // function myMap() {
