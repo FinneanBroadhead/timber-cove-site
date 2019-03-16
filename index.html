@@ -9,19 +9,20 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/image-grid.css">
-
-  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
   <link rel="stylesheet" href="assets/css/shadows.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/animations.css">
   <link rel="stylesheet" href="assets/css/fliznav.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous">
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/aos.js"></script>
   <script src="assets/js/nav.js"></script>
   <script src="assets/js/jquery.scrollTo.min.js" type="text/javascript"></script>
   <script src="assets/js/jquery.localScroll.min.js" type="text/javascript"></script>
@@ -152,20 +153,26 @@
     </div>
   </section>
 
-  <div class="section-separator">
+  <div class="section-separator about-section-separator">
   </div>
 
   <section id="about">
     <div class="jumbotron-gradient">
 
-      <div class="about-heading">
-        <h1 class="heading">"A Getaway Like No Other."</h1>
-        <h2 class="subheading">The story behind Timber Cove</h2>
+      <div class="heading-section">
+        <div class="about-heading" data-aos="fade-down">
+          <h1 class="heading">"A Getaway Like No Other."</h1>
+          <h2 class="subheading">The story behind Timber Cove</h2>
+        </div>
       </div>
-      <div class="row justify-content-around library-row">
-        <img src="assets/imgs/library.jpg" alt="" class="img-fluid col-xs-4  effect7">
 
-        <div class="about-paragraph-1 col-md-6 effect7">
+      <div class="row library-row" data-aos="fade-left">
+        <div class="about-img-container">
+          <img src="assets/imgs/library.jpg" alt="" class="img-fluid col-xs-4">
+          <p class="room-name-text">Library</p>
+        </div>
+
+        <div class="about-paragraph about-paragraph-1 col-md-6">
           <p class="side-paragraph">Developed by Johnston Architechts, Timber Cove is the brain-child of William
             Broadhead.
             This luxury lakefront home was completed in 2014 and is nestled on 1.75 acres of seclusion with panoramic
@@ -191,7 +198,7 @@
       <div class="row justify-content-around in-the-news-row">
         <img src="assets/imgs/home-of-distinction.png" class="img-fluid award col-xs-4 effect8">
 
-        <div class="about-paragraph-2 col-md-6 effect7">
+        <div class="about-paragraph about-paragraph-2 col-md-6 effect7">
           <p class="side-paragraph">Developed by Johnston Architechts, Timber Cove is the brain-child of William
             Broadhead.  
             This luxury lakefront home was completed in 2014 and is nestled on 1.75 acres of seclusion with panoramic
