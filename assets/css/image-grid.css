@@ -403,8 +403,11 @@ text area {
 
 #work {
   position: relative;
-  padding: 0 10px;
+  z-index: 9;
+  padding: 5vh 10px;
+  margin-top: 100vh;
   background-color: white;
+  overflow-y: hidden;
 }
 
 .work-block {

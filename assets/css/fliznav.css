@@ -3,7 +3,7 @@
 	position: fixed;
 	top: 0;
 	height: 70px;
-	z-index: 1;
+	z-index: 999 !important;
 }
 /* Navigation Settings */
 nav {
@@ -13,6 +13,7 @@ nav {
   text-align: center;
 	height: 70px;
 	background: #fff;
+	z-index: 999 !important;
 }
 
 nav .nav-link {
