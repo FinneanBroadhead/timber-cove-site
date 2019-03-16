@@ -138,7 +138,6 @@ body {
   display: block;
 }
 
-
 .enter-site-button {
   cursor: pointer;
   z-index: 3;
@@ -455,12 +454,12 @@ body {
   transform: translateY(-50%);
   color: white;
 }
-#about .about-paragraph-1::after {
+#about .about-paragraph-1 .side-paragraph::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0px;
-  height: 90%;
+  left: -5%;
+  height: 80%;
   width: auto;
   border-left: 5px solid white;
   transform: translateY(-50%);
