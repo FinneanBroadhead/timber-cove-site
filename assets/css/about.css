@@ -176,11 +176,27 @@ body {
 }
 .info-section .half-image-right {
 	left: 50%;
-	border-left: 3px solid #459e76;
 }
-.info-section .half-image-left {
+.info-section .half-image-right::after {
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 75%;
+	top: 50%;
+	border-radius: 500%;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+	overflow-y: hidden;
+}
+.info-section .half-image-right::after {
+	right: auto;
+	left: 0px;
+	border: 7px solid rgba(139, 8, 89, 1.0);
+	transform: translate(-50%, -50%);
+}
+.info-section .half-image-left::after {
 	right: 50%;
-	border-right: 3px solid #459e76;
+	border-right: 3px solid rgba(139, 8, 89, 1.0);
+	transform: translate(-50%, 50%);
 }
 .half-image img {
 	position: relative;
