@@ -264,7 +264,7 @@ body {
   border-radius: 10px;
   font-family: 'Asap Condensed', sans-serif;
 }
-.attractions-heading h1{
+.attractions-heading h1 {
   font-size: 4.5vw !important;
   text-align: center;
   top: 7%;
@@ -279,6 +279,12 @@ body {
   position: relative;
   width: 50%;
   height: 100%;
+}
+.about-img-container-right {
+  position: absolute !important;
+  left: auto !important;
+  right: 0px !important;
+  /* display: none; */
 }
 .about-img-container .room-name-text {
   font-size: 3vw;
@@ -336,7 +342,8 @@ body {
   text-align: left;
   position: absolute;
 }
-#about .about-paragraph-1 {
+#about .about-paragraph-1,
+#about .about-paragraph-2 {
   font-size: 1.5vw;
   position: absolute;
   top: 50%;
@@ -345,7 +352,11 @@ body {
   transform: translateY(-50%);
   color: white;
 }
-#about .about-paragraph-1 .side-paragraph::after {
+#about .about-paragraph-2 {
+  left: 0px;
+  right: auto;
+}
+#about .about-paragraph .side-paragraph::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -358,21 +369,6 @@ body {
   border-top-right-radius: 3px;
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
-}
-#about .about-paragraph-2 {
-  font-size: 1.5vw;
-  padding: 20px;
-  position: relative;
-  padding-left: 40px;
-  padding-bottom: 30px;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  position: relative;
-  -webkit-align-content: space-between;
-  align-items: space-between;
-  margin-top: 30px;
-  background-color: white;
 }
 #timber-news-header {
   position: absolute;
@@ -578,12 +574,17 @@ body {
     width: 100% !important;
     height: 100% !important;
     left: 50%;
+    right: auto;
     top: 50% !important;
     bottom: auto !important;
     text-align: center;
     transform: translate(-50%, -50%) !important;
   }
-  #about .about-paragraph-1 .side-paragraph::after {
+  #about .about-paragraph-2 {
+    left: 50%;
+  }
+  #about .about-paragraph-1 .side-paragraph::after,
+  #about .about-paragraph-2 .side-paragraph::after {
     border: none;
   }
   #about .about-paragraph .side-paragraph {
