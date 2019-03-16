@@ -349,7 +349,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  
 }
 
 #around-the-area {
@@ -591,9 +590,6 @@ body {
     font-size: 3vw;
     left: 5%;
     transform: translateY(-50%) !important;
-  }
-  #about .about-paragraph-1 {
-    /* transform: none !important; */
   }
 
   .interactive-map-intro {
