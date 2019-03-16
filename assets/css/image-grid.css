@@ -419,7 +419,8 @@ text area {
 }
 
 .work-block.disabled {
-  filter: brightness(0.8) !important;
+  /* filter: brightness(0.8) !important; */
+  /* filter: blur(2px); */
   /* opacity: 0.1; */
 }
 
