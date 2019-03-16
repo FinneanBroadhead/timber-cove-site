@@ -415,6 +415,12 @@ text area {
   display: none;
   margin: 0 10px 20px;
   overflow: hidden;
+  transition: 0.2s;
+}
+
+.work-block.disabled {
+  filter: brightness(0.8) !important;
+  /* opacity: 0.1; */
 }
 
 .show {

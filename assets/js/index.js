@@ -1,8 +1,25 @@
-// $(document).ready(function() {
-//   // Enable smooth scroll with click-to-navigate
-//   $.localScroll({duration:500});
+var currentHoveredWorkblock = undefined;
+$(document).ready(function() {
+    $('.work-block').each(function(index) {
+        $(this).hover(function() {
+            currentHoveredWorkblock = $(this);
 
-// })
+            $('.work-block').each(function(index) {
+                if (!$(this).is(currentHoveredWorkblock)) {
+                    $(this).addClass('disabled');
+                }
+            });
+        },
+        function() {
+            $('.work-block').each(function(index) {
+                $(this).removeClass('disabled');
+            });
+        });
+        var navOpen = "false";
+        // Enable smooth scroll with click-to-navigate
+        $.localScroll({duration:300});
+    });
+})
 
 // function myMap() {
 //     var mapOptions = {
