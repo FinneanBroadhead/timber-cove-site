@@ -8,6 +8,8 @@
   <title>Timber Cove</title>
 
   <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/yqv0lcf.css">
   <link rel="stylesheet" href="assets/css/image-grid.css">
@@ -21,11 +23,11 @@
   <link rel="stylesheet" href="assets/css/fliznav.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
   crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
   <script src="assets/js/aos.js"></script>
   <!-- <script src="assets/js/nav.js"></script> -->
+  <script src="assets/js/room-boxes.js"></script>
   <script src="assets/js/jquery.scrollTo.min.js" type="text/javascript"></script>
   <script src="assets/js/jquery.localScroll.min.js" type="text/javascript"></script>
 </head>
@@ -36,7 +38,7 @@
 
     <nav class="fixed">
       <ul>
-        <li class="nav-link"><a href="index">Home</a></li>
+        <li class="nav-link active"><a>Home</a></li>
         <li class="nav-link"><a href="#explore-the-home">Explore the Property</a></li>
         <li class="nav-link"><a href="about.html">About</a></li>
         <li class="nav-link"><a href="#attractions">Attractions</a></li>
@@ -69,7 +71,7 @@
     <section id="work">
       <div class="frame">
         <div id="grid">
-          <div class="work-block case-study show"> <a href="#"> <img class="object-fit"
+          <div class="work-block case-study show" data-type="skybridge"> <a> <img class="object-fit"
                 src="assets/imgs/block-1.JPG" alt="Hiring a Social Media Agency">
               <div class="work-info">
                 <p><span>Entry Skybridge</span><br></p>
@@ -199,7 +201,7 @@
         </div>
 
         <div id="timber-news-header">
-          <h1 class="news-heading">Timber Cove in the news:</h1>
+          <h1 class="news-heading">Timber Cove in the news</h1>
         </div>
 
         <div class="row library-row">
@@ -250,7 +252,7 @@
         <div id="iframe-row">
           <div id="iframe-container">
 
-            <iframe class="map-iframe" src="http://www.flizzet.com/private/interactive-map/index.html" class="map-frame" frameborder="0"></iframe>
+            <iframe id="mapframe" class="map-iframe" src="interactive-floormap/index.html" frameborder="0"></iframe>
 
           </div>
         </div>
@@ -280,7 +282,6 @@
     <script src="assets/js/index.js"></script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkxXcYD5bV20sfpHxFIMP8aqReQmpm2a0&callback=initMap"></script>
-  <!-- </div> -->
 
 </body>
 
