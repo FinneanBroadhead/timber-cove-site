@@ -1,101 +1,18 @@
-:root {
-    --level-changer-hover-amt: 5px;
-}
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    background-color: white;
-    overflow-y: hidden;
-}
-
-#canvas-overlay {
-    pointer-events: none;
-    font-family: "Poppins", sans-serif;
-    color: white;
+.vertical-side-text {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
-#canvas-overlay .header-piece {
-    pointer-events: none;
-    color: white;
-    position: absolute;
-    padding: 2% 0px;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-}
-
-canvas {
-    display: block;
-}
-
-#map-canvas {
-    pointer-events: all;
-    position: absolute;
-    overflow: hidden;
-    top:50%;
-    left:50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-}
-
-#level-changer {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    color: black;
-}
-#level-changer .level-changer-buttons {
-    position: absolute;
-    pointer-events: all;
-    position: relative;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0px;
-}
-#level-changer .level-button {
-    pointer-events: all;
-    display: inline-block;
-    font-size: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 40%;
-    height: 110%;
-    top: 50%;
-}
-#level-changer .level-button:hover {
-    cursor: pointer;
-}
-#level-changer .level-button i {
-    border-radius: 3px;
-    transition: 0.3s;
-    transition-timing-function: cubic-bezier(.4,-0.9,0,1.75);
-}
-#level-changer .level-changer-buttons .increase-button:hover i {
-    transform: translateY(calc(var(--level-changer-hover-amt) * -1));
-    border-top: 3px solid black;
-}
-#level-changer .level-changer-buttons .decrease-button:hover i {
-    transform: translateY(var(--level-changer-hover-amt));
-    border-bottom: 3px solid black;
-}
-#level-changer .current-level-text {
-    padding-right: 10%;
+    font-family: 'Kreon', sans-serif;
+    left: -15.75rem;
+    font-size: 1.4rem;
+    bottom: 15rem;
     float: left;
-}
-
-@media (orientation: portrait) {
-    
-}
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    -moz-transform: rotate(-90deg);  /* FF3.5+ */
+    -o-transform: rotate(-90deg);  /* Opera 10.5 */
+    -webkit-transform: rotate(270deg);  /* Saf3.1+, Chrome */
+    -moz-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 0%;
+      z-index: 9999;
+  }
+  

@@ -1,0 +1,6 @@
+.flizzet-piece {
+    color: rgba(95, 4, 60, 1);
+    text-align: center;
+    font-size: 1.5vw;
+    text-shadow: 0px 0px 10px rgba(95, 4, 60, 0.75);
+}
