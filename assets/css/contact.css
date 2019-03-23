@@ -1,0 +1,207 @@
+body {
+    overflow-x: hidden !important;
+}
+
+
+#bgvid2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100vh !important;
+    top: 0;
+    z-index: -25;
+    overflow-x: hidden !important;
+  
+    overflow-y: hidden !important;
+    background: url('../imgs/dog-bg.JPG');
+    object-fit: cover;
+      min-width: 100vw;
+      background: fill;
+  }
+  #contact-landing {
+    overflow-x: hidden !important;
+    width: 100%;
+    height: 100vh;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(125, 185, 232, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(125, 185, 232, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(125, 185, 232, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#65696d', endColorstr='#007db9e8', GradientType=0);
+    /* IE6-9 */
+  }
+
+  .landing-header {
+	top: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.landing-header .heading {
+	font-family: source-sans-pro, sans-serif;
+	font-size: 7.5vw;
+	line-break: loose;
+	position: relative;
+	width: 100%;
+	left: 50%;
+	text-align: center;
+	color: white;
+	transform: translateX(-50%);
+	text-transform: uppercase;
+	text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 7px 1px #bbb, 0px 8px 1px #777, 0px 9px 1px #444,
+	  0px 10px 20px #000;
+	width: 100vw;
+}
+.jumbo-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 7.5vw;
+    line-break: loose;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    text-align: center;
+    color: white;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 7px 1px #bbb, 0px 8px 1px #777, 0px 9px 1px #444,
+          0px 10px 20px #000;
+  }
+.heading-2 {
+	font-size: 4vh;
+	font-family: 'Playfair Display', serif;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 8px 1px #bbb, 0px 7px 1px #777, 0px 9px 1px #555, 0px 10px 1px #444,
+		0px 10px 10px #000;
+	text-align: center;
+	padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+  #booking {
+      height: 100vh;
+      width: 100%;
+  }
+  
+  .cal-icon {
+      font-size: 10vw;
+      transform: translateX(-50%);
+      left: 50%;
+      
+      position: relative;
+
+  }
+
+  .heading-section {
+    position: relative;
+    z-index: -1;
+    padding-top: 13vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 7%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  }
+  .booking-heading {
+    margin-bottom: 2.5%;
+    padding-bottom: 50px;
+  }
+  .booking-heading .heading::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 0px;
+    top: auto;
+    bottom: -1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid white;
+  }
+  .booking-heading .heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 4vw;
+    line-break: loose;
+    position: relative;
+    width: 70%;
+    left: 50%;
+    text-align: center;
+    color: white;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 7px 1px #bbb, 0px 8px 1px #777, 0px 9px 1px #444,
+      0px 10px 20px #000;
+  }
+  .booking-heading .subheading {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3%;
+    text-align: center;
+    color: white;
+  }
+
+  #booking .booking-info {
+    font-family: 'Work Sans', sans-serif;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    font-size: 2vw;
+    width: 90%;
+    padding: 5vw;
+    text-align: center;
+    background-color: #2d3d55;
+    transform: translateX(-50%);
+  }
+  
+a {
+    color: black;
+
+}
+#contact-info {
+    padding-top: 10vh;
+    height: 100vh;
+    width: 100%;
+}
+#contact-info .container {
+    position: relative;
+    width: 100%;
+    top: 25%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  
+  #contact-info .content {
+    width: 220px;
+    height: 140px;
+    display: inline-block;
+    background: #3498db;
+    margin: 10px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  #contact-info .content:hover i{
+    transform: translateY(-40px);
+  }
+  
+  #contact-info .content i {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    line-height: 140px;
+    background: #34495e;
+    z-index: 1;
+    transition: transform 0.6s;
+  }
+  
+  #contact-info .content span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0;
+  }
