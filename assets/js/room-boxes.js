@@ -5,8 +5,6 @@ $(document).ready(function() {
 
             var mapFrame = document.getElementById("mapframe");
 
-            console.log("clicked " + clickedType);
-
             mapFrame.contentWindow.postMessage(clickedType, "*");
         })
     })
