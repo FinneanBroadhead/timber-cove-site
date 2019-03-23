@@ -1,0 +1,48 @@
+#level-changer {
+    position: fixed;
+    bottom: var(--fixed-margin);
+    right: var(--fixed-margin);
+    color: black;
+    transform: translateY(15%);
+}
+#level-changer .level-changer-buttons {
+    position: absolute;
+    pointer-events: all;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+}
+#level-changer .level-button {
+    pointer-events: none;
+    color: darkgray;
+    font-size: 40px;
+    top: 50%;
+    margin: 0px 10px;
+}
+#level-changer .level-button:hover {
+    cursor: pointer;
+}
+#level-changer .level-button i {
+    border-radius: 3px;
+    transition: 0.3s;
+    transition-timing-function: cubic-bezier(.4, -0.9, 0, 1.75);
+}
+.increase-button.triggered i {
+    animation: level-changer-hover-up 0.6s cubic-bezier(.4, -0.9, 0, 1.75) 1 normal forwards;
+}
+.decrease-button.triggered i {
+    animation: level-changer-hover-down 0.6s cubic-bezier(.4, -0.9, 0, 1.75) 1 normal forwards;
+}
+#current-level-text {
+    color: black;
+    text-align: left;
+    position: fixed;
+    right: var(--fixed-margin);
+    bottom: var(--fixed-margin);
+    font-size: 20px;
+    transform-origin: bottom right;
+    transform: rotate(90deg) translateY(100%);
+    border-top: 2px solid var(--secondary-color);
+}

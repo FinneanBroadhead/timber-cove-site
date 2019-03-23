@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timber Cove - Explore the Home</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/anim.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/floor-level-changer.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/zoom-buttons.css">
+    
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/pixi.min.js"></script>
+    <script src="assets/js/pixi-filters.js"></script>
+    <script src="assets/js/Tink.js"></script>
+    <script src="assets/js/Utils.js"></script>
+    <script src="assets/js/Transition.js"></script>
+    <script src="assets/js/Sprite.js"></script>
+    <script src="assets/js/Images.js"></script>
+    <script src="assets/js/Loader.js"></script>
+    <script src="assets/js/WaypointManager.js"></script>
+    <script src="assets/js/Waypoint.js"></script>
+    <script src="assets/js/Room.js"></script>
+    <script src="assets/js/HomeFloor.js"></script>
+    <script src="assets/js/HomeDiagram.js"></script>
+    <script src="assets/js/Main.js"></script>
+    <script src="assets/js/SceneManager.js"></script>
+    <script src="assets/js/Nav.js"></script>
+    <script src="assets/js/WaypointHoverText.js"></script>
+    <script src="assets/js/Positioning.js"></script>
+    <script src="assets/js/MessageListener.js"></script>
+</head>
+<body>
+
+    <div id="map-canvas"></div>
+    
+    <div id="canvas-overlay">
+        <div class="header-piece">
+            <h1>Explore the Home</h1>
+        </div>
+
+        <div id="side-nav" class="shadow-effect-8">
+            <div class="nav-inner">
+                <div class="nav-header">
+                    <h1>All Rooms</h1>
+                </div>
+
+                <div class="nav-buttons">
+                </div>
+            </div>
+
+            <div class="toggle-button" onclick="toggleNav();">
+                <p><i class="fas fa-angle-left"></i></p>
+            </div>
+        </div>
+
+        <p class="nav-indicator-text">Menu</p>
+        <div class="nav-open-button is-active" onclick="toggleNav();">
+            <p><i class="fas fa-angle-right"></i></p>
+        </div>
+
+        <div class="mobile-nav-button" onclick="toggleNav();">
+            <div class="hamburger hamburger--slider">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="level-changer">
+            <div class="level-changer-buttons">
+                <div class="level-button increase-button">
+                    <i class="fas fa-angle-up"></i>
+                </div>
+                <div class="level-button decrease-button">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="zoom-buttons">
+            <div class="zoom-in-button zoom-button" onclick="zoomEvent('IN');">
+                <i class="fas fa-search-plus"></i>
+            </div>
+            <div class="zoom-out-button zoom-button" onclick="zoomEvent('OUT');">
+                <i class="fas fa-search-minus"></i>
+            </div>
+        </div>
+        
+        <div id="current-level-text">
+            Loading
+        </div>
+    </div>
+
+    <div id="waypoint-hover-text">
+        <p>WaypointID</p>
+    </div>
+
+    <div id="showcase-page">        
+        <div class="back-button" onclick="hideShowcasePage();">
+            <i class="fas fa-long-arrow-alt-left"></i> Back
+        </div>
+    </div>
+
+    <div class="darkener">
+        <img src="assets/imgs/timber-logo.png" class="darkener-logo">
+        <div class="darkener-overlay"></div>
+    </div>
+
+</body>
+</html>
