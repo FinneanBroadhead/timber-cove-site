@@ -33,7 +33,7 @@ nav .nav-link a {
 }
 @media (orientation: portrait) {
 
-	nav li {
+	nav .nav-link {
 		padding: 24px 4px;
 	}
 

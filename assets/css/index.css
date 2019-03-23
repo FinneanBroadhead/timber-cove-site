@@ -415,8 +415,8 @@ section {
   left: 50%;
   transform: rotate(2deg) translate(-50%, -50%);
   z-index: 9;
-  background-color: white;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../imgs/header-background-image.jpeg);
+  background-color: #856035;
+  background-image: linear-gradient(rgba(216,220,224, 0.9), rgba(216,220,224, 0.9)), url(../imgs/header-background-image.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
