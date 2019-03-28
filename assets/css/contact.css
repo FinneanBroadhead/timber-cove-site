@@ -1,6 +1,7 @@
 body, html {
   position: relative;
   overflow-x: hidden !important;
+
 }
 
 body {
@@ -228,16 +229,15 @@ a {
 }
 
 .socials-container {
-  Margin-bottom: 20vh;
+  margin-top: 20vh;
 }
 .social-ex-container {
-  margin-top: 5vh;
+  margin-top: 30vh;
 }
 .single-service-area  {
   position: relative;
   z-index: 1;
   padding: 40px 20px;
-  margin-bottom: 10vh;
   
   border: 1px solid #e5e5e5;
   text-align: center;
@@ -246,18 +246,7 @@ a {
   transition-duration: 500ms;
 }
 
-.single-service-area  {
-  position: relative;
-  z-index: 1;
-  
-  padding: 40px 20px;
-  margin-bottom: 10vh;
-  border: 1px solid #e5e5e5;
-  text-align: center;
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
-}
+
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single-service-area {
@@ -286,6 +275,9 @@ a {
     font-size: 18px;
   }
   #contact-info .container {
+    top: 10%;
+  }
+  #contact-intro .container {
     top: 10%;
   }
 }
@@ -343,6 +335,9 @@ a {
   #contact-info .container {
     top: 5%;
   }
+  #contact-intro .container {
+    top: 5%;
+  }
 }
 .single--service--item .service-content .service-text {
   margin-left: auto;
@@ -354,6 +349,9 @@ a {
   .single--service--item .service-content .service-text {
     width: 455px;
   }
+  .social-ex-container {
+    margin-top: 20vh;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -363,6 +361,7 @@ a {
   #contact-info .container {
     top: 0%;
   }
+
 }
 
 
@@ -389,12 +388,14 @@ a {
   .single--service--item .service-content .service-text h2 {
     font-size: 30px;
   }
+  
 }
 
 @media only screen and (max-width: 767px) {
   .single--service--item .service-content .service-text h2 {
     font-size: 24px;
   }
+  
 }
 
 .single--service--item .service-content .service-text p {
@@ -465,7 +466,10 @@ a {
 }
 
 #contact-info {
-  height: 250vh;
+  max-height: 350vh;
+  min-height: 100vh;
+
+  height: 200%;  
   position: relative;
   margin-top: -3vh;
   width: 100%;
@@ -479,6 +483,7 @@ a {
   transform: translateY(-50%);
   text-align: center;
 }
+
 
 #contact-info .content {
   width: 320px;
@@ -509,9 +514,14 @@ a {
   z-index: 1;
   transition: transform 0.6s;
 }
+.container .social-ex-container {
+  top: 50%;
+  position: relative;
+}
+
 @media (orientation: portrait) {
   .social-ex-container {
-    top: 20%;
+    top: 30%;
   }
 }
 #contact-info .content span {
@@ -547,7 +557,9 @@ a {
     position: relative;
     cursor: pointer;
   }
-
+  .social-ex-container {
+    margin-top: 50vh;
+  }
   #contact-info .container {
     top: 10%;
   }

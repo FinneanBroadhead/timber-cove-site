@@ -44,7 +44,7 @@ function createHomeDiagram() {
 
     HomeDiagram.resize = function() {
         HomeDiagram.zoomScaleY = 1.0;
-        HomeDiagram.targetZoomScaleY = 1.0;
+        HomeDiagram.targetZoomScaleY = .65;
         HomeDiagram.scale.x = 1.0;
         HomeDiagram.scale.y = 1.0;
         HomeDiagram.anchor.set(0.5, 0.5);
