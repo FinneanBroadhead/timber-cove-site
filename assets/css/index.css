@@ -375,6 +375,7 @@ section {
 #timber-news-header .news-heading {
   position: absolute;
   top: 50%;
+  font-size: 2rem;
   transform: translateY(-150%);
 }
 
