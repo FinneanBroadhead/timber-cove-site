@@ -200,6 +200,10 @@ section {
   transition: fill stroke 0.5s;
 }
 
+.wordpressframe {
+  margin-top: 40px;
+}
+
 #about {
   width: 100%;
   min-height: 100%;
