@@ -50,7 +50,8 @@ body {
 	font-family: 'source-sans-pro', sans-serif;
 	color: white;
 	text-transform: uppercase;
-
+	text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 8px 1px #bbb, 0px 7px 1px #777, 0px 9px 1px #555, 0px 10px 1px #444,
+		0px 10px 10px #000;
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -111,7 +112,7 @@ body {
 .info-col p {
 	position: absolute;
 	top: 50%;
-	width: 55%;
+	width: 75%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 1.5vw;
@@ -142,12 +143,15 @@ body {
 	height: 90%;
 	border: 3px solid rgb(216,220,224);
 	border-radius: 100%;
+	color: black;
 }
 .info-col-left p:hover {
 	left: 51.5%;
+	color: black;
 }
 .info-col-right p:hover {
 	left: 48.5%;
+	color: black;
 }
 .info-col-left .column-highlight {
 	background: -moz-linear-gradient(left, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
