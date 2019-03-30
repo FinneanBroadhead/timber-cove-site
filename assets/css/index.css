@@ -382,7 +382,10 @@ section {
   font-size: 2rem;
   transform: translateY(-150%);
 }
-
+#timber-news-header .news-heading {
+  color: white; 
+  text-decoration: underline;
+}
 .in-the-numbers-box {
   position: relative;
   display: block;
