@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/fliznav.css">
     <link rel="stylesheet" href="assets/css/zoom-buttons.css">
-
+    <link rel="stylesheet" href="assets/css/indexindi.css">
+    
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/pixi.min.js"></script>
     <script src="assets/js/pixi-filters.js"></script>
@@ -42,7 +43,7 @@
 </head>
 
 <body>
-    <nav class="fixed">
+    <nav class="fixed" style="position: relative !important;">
         <ul>
             <li class="nav-link active"><a href="../index.html">Home</a></li>
             <li class="nav-link"><a href="http://localhost:8888/wordpress">Blog</a></li>
@@ -52,7 +53,7 @@
             <li class="nav-link"><a href="../contact.html">Contact</a></li>
         </ul>
     </nav>
-
+    <div class="blueprint-container">
     <div id="map-canvas"></div>
 
     <div id="canvas-overlay">
@@ -128,6 +129,7 @@
         <div class="darkener-overlay"></div>
     </div>
 
+    </div>
 </body>
 
 </html>

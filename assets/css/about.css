@@ -122,7 +122,7 @@ body, html {
 .info-col p {
 	position: absolute;
 	top: 50%;
-	width: 55%;
+	width: 75%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 1.5vw;
@@ -153,12 +153,15 @@ body, html {
 	height: 90%;
 	border: 3px solid rgb(216,220,224);
 	border-radius: 100%;
+	color: black;
 }
 .info-col-left p:hover {
 	left: 51.5%;
+	color: black;
 }
 .info-col-right p:hover {
 	left: 48.5%;
+	color: black;
 }
 .info-col-left .column-highlight {
 	background: -moz-linear-gradient(left, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
