@@ -1,4 +1,4 @@
-$(document).ready(function() {console.log("Ugh");});
+$(document).ready(function() {});
 
 window.addEventListener("message", function(e) {
 
