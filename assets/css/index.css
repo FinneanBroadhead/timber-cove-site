@@ -77,12 +77,10 @@ section {
   z-index: -1;
   padding-top: 13vh;
   background-color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 7%;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 .about-heading {
-  margin-bottom: 2.5%;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .about-heading .heading::after {
   content: "";
@@ -582,7 +580,7 @@ section {
     filter: brightness(0.5) blur(5px);
   }
   .library-row {
-    height: 80vh !important;
+    height: 65vh !important;
     position: relative !important;
   }
   .about-paragraph {
