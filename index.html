@@ -178,7 +178,7 @@
     </div>
   </div>
 
-  <section id="about">
+  <section id="about" style="overflow-x: hidden !important;">
     <div class="jumbotron-gradient">
 
       <div class="heading-section">
@@ -256,269 +256,272 @@
 
         </div>
       </section>
+      <h2 class="heading" style="color: white;">Technology in Timber Cove</h2>
+
+
 
       <div class="overflow-wrapper">
       </div>
-
-      <a id="explore-the-home"></a>
-      <section id="blueprint">
-        <div id="interactive-map">
-          <div class="interactive-map-intro">
-            <div class="text-container">
-              <h2 class="subheading">Take a look around for yourself</h2>
-                <p>Use our custom web-app to look around the best rooms in the home.</p>
-                <p class="subtext"><small><i class="fas fa-info"></i> Scroll to zoom, click a waypoint to view more
-                    information about that room.</small></p>
-            </div>
-
-            <i class="fas fa-home showcase-icon"></i>
-          </div>
-          <div class="interactive-map-background"></div>
-          <div id="iframe-row">
-            <div id="iframe-container">
-
-              <iframe id="mapframe" width="100%" height="400px" class="map-iframe" src="interactive-floormap/index.html"
-                frameborder="0" scrolling="no"></iframe>
-              <!-- <iframe id="mapframe" class="map-iframe" src="file:///Users/flizzet/Documents/HTML5Space/InDev/interactive-floormap/index.html" frameborder="0"></iframe> -->
-
-            </div>
-          </div>
+  </section>
+  <a id="explore-the-home"></a>
+  <section id="blueprint">
+    <div id="interactive-map">
+      <div class="interactive-map-intro">
+        <div class="text-container">
+          <h2 class="subheading">Take a look around for yourself</h2>
+          <p>Use our custom web-app to look around the best rooms in the home.</p>
+          <p class="subtext"><small><i class="fas fa-info"></i> Scroll to zoom, click a waypoint to view more
+              information about that room.</small></p>
         </div>
-      </section>
 
-      <div class="overflow-wrapper">
-        <div class="section-separator about-section-separator">
+        <i class="fas fa-home showcase-icon"></i>
+      </div>
+      <div class="interactive-map-background"></div>
+      <div id="iframe-row">
+        <div id="iframe-container">
+
+          <iframe id="mapframe" width="100%" height="400px" class="map-iframe" src="interactive-floormap/index.html"
+            frameborder="0" scrolling="no"></iframe>
+          <!-- <iframe id="mapframe" class="map-iframe" src="file:///Users/flizzet/Documents/HTML5Space/InDev/interactive-floormap/index.html" frameborder="0"></iframe> -->
+
         </div>
       </div>
-
-      <a id="attractions"></a>
-      <section id="blueprint">
-        <div id="interactive-map" class="attraction-map">
-          <div class="interactive-map-intro">
-            <div class="text-container">
-              <h2>Local Attractions Near Timber Cove</h2>
-              <p>Use our custom map to look around the area to find places to eat or things to do.</p>
-              <p class="subtext"><small><i class="fas fa-info"></i> Scroll or pinch to zoom, click a waypoint to view
-                  more
-                  information about that landmark.</small></p>
-            </div>
-
-            <i class="fas fa-map-marked-alt showcase-icon"></i>
-          </div>
-          <div class="interactive-map-background"></div>
-          <div id="iframe-row">
-            <div id="iframe-container">
-              <div id='map'></div>
-              <script>
-                mapboxgl.accessToken =
-                  'pk.eyJ1Ijoib2xmaW5ueXR3b3RpbWUiLCJhIjoiY2p0YnAybGVwMG8zeDQzcDdhaWN6dHBzYiJ9.cooh7deSYjLvZtIHCA06PA';
-                var map = new mapboxgl.Map({
-                  container: 'map',
-                  style: 'mapbox://styles/mapbox/streets-v9',
-                  center: [-121.102323, 47.286711],
-                  zoom: 10.15
-                });
-                map.on('load', function () {
-                  // Add a layer showing the places.
-                  map.addLayer({
-                    "id": "places",
-                    "type": "symbol",
-                    "source": {
-                      "type": "geojson",
-                      "data": {
-                        "type": "FeatureCollection",
-                        "features": [{
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<p><a href=\"index.html\" target=\"_blank\" title=\"Opens in a new window\">Timber Cove</a><br><hr>Where the Property Resides</p>",
-                              "icon": "star"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-121.102323, 47.286711]
-                            }
-                          }, {
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Cascade Playtime</a><br>Motorsports and mountain activities rental shop. </p>",
-                              "icon": "snowmobile"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-121.074068, 47.273818]
-                            }
-                          }, {
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Hex Mountain Hiking Trail</a><br>Touted as the worlds best snowshoeing trail, this is a great year round hike that is great for snowmobiling, cross country skiing or maybe just a leisurely walk.  </p>",
-                              "icon": "bicycle"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-121.097482, 47.292557]
-                            }
-                          }, {
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Village Pizza</a><br>This pizza place is known as one the best restaurants in the area, serving fresh hot pizza all day. </p>",
-                              "icon": "restaurant"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-120.993580, 47.223153]
-                            }
-                          }, {
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<strong>The Brick Bar and Restaurant</strong><p>This bar has been in Roslyn since the 1800s, the saloon also features live performances from a range of artists.<a href=\"http://www.bricksaloon.com/\" target=\"_blank\" title=\"Opens in a new window\"></p>",
-                              "icon": "bar"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-120.992586, 47.222930]
-                            }
-                          }, {
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<strong>French Cabin Campground</strong><p>This popular local camping spot features natural a great open area thats perfect for motorized or non motorized recreation or maybe pitching a tent for the night or there is some amazing places to hike around this area.<a href=\"http://www.bricksaloon.com/\" target=\"_blank\" title=\"Opens in a new window\"></p>",
-                              "icon": "picnic-site"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-121.113994, 47.354595]
-                            }
-                          },
-                          {
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<strong>Speelyi Beach Park</strong><p>This beautiful beach both serves and a boat launch and an amazing place to set up shop and relax and soak in the beach weather.<p><a href=\"http://www.bricksaloon.com/\" target=\"_blank\" title=\"Opens in a new window\"></p>",
-                              "icon": "swimming"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-121.063417, 47.253331]
-                            }
-                          },
-                          {
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<strong>Prospecter Golf Course</strong><a href=\"https://www.google.com/maps/place/Prospector+Golf+Course/@47.2083343,-121.016085,17z/data=!3m1!4b1!4m5!3m4!1s0x549a0e47cba04b1b:0xd76603f969662496!8m2!3d47.2083307!4d-121.0138963\" target=\"_blank\" title=\"Opens in a new window\"><p>This golf course is inside of the prestigious Suncadia Golf Resort, around the course are driving ranges and any amenity you would ever need</p>",
-                              "icon": "golf"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-121.011818, 47.209014]
-                            }
-                          },
-                          {
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<a href=\"https://www.google.com/maps/place/Tumble+Creek+Club/@47.2172857,-121.0494876,15.34z/data=!4m8!1m2!2m1!1sTumble+Creek+Golf+Course+!3m4!1s0x0:0x9797d9a0d98f8e8b!8m2!3d47.2137127!4d-121.0486293\" target=\"_blank\" title=\"Opens in a new window\"><strong>Tumble Creek Golf Course</strong><p>The Tumble Creek golf course like Suncadia, resides inside of it's parents clubhouse/resort. This course is similar in difficulty to the Prospector course and features the same amenities that Prospecter has.</p>",
-                              "icon": "golf"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-121.048264, 47.213782]
-                            }
-                          },
-                          {
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<strong>Suncadia Swimming Center</strong><a href=\"https://www.google.com/maps/place/Suncadia+Swim+%26+Fitness+Center/@47.20911,-121.0209809,17z/data=!4m12!1m6!3m5!1s0x549a0e47cba04beb:0xe000fec028c3d4e8!2sSuncadia+Resort!8m2!3d47.2091067!4d-121.0187924!3m4!1s0x549a0e4120ac47c1:0x1c4f2ee5aaa50c27!8m2!3d47.2102045!4d-121.0156207/\" target=\"_blank\" title=\"Opens in a new window\"><p>This massive Swimming facility is great for the whole family because there's something for everyone to do, any age. Theres a calming steam room/sauna, a hot tub, two massive multi story waterslides and finally a few very large pools.</p>",
-                              "icon": "swimming"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-121.012927, 47.211112]
-                            }
-                          },
-                          {
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<strong>Speelyi Beach Park</strong><p><a href=\"http://www.bricksaloon.com/\" target=\"_blank\" title=\"Opens in a new window\"></p>",
-                              "icon": "swimming"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-121.094853, 47.384011]
-                            }
-                          },
-                          {
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<strong>Suncadia Resort</strong><a href=\"https://www.google.com/maps/place/Suncadia+Resort/@47.20911,-121.0209809,17z/data=!3m1!4b1!4m5!3m4!1s0x549a0e47cba04beb:0xe000fec028c3d4e8!8m2!3d47.2091067!4d-121.0187924/\" target=\"_blank\" title=\"Opens in a new window\"><p>The Suncadia Resort is a great destination for those of in search of a very high class dining experience or maybe want to get drinks. </p>",
-                              "icon": "restaurant"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-121.016553, 47.209796]
-                            }
-                          },
-                          {
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<strong>The Red Bird Cafe</strong><a href=\"https://www.google.com/maps/place/The+Red+Bird+Cafe+%26+Bakery/@47.2229443,-120.9951211,17z/data=!3m1!4b1!4m5!3m4!1s0x549a0e1fbb0f9caf:0xf2fa0f47f5ca111e!8m2!3d47.2229407!4d-120.9929324/\" target=\"_blank\" title=\"Opens in a new window\"><p>This cute little cafe is a delicious restaurant that mainly serves hand made sandwiched and hand cooked bakery goods. You can also get a beer, an italian soda or maybe old fashioned cafe.</p>",
-                              "icon": "restaurant"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-120.992858, 47.222973]
-                            }
-                          }, {
-                            "type": "Feature",
-                            "properties": {
-                              "description": "<p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">The Cottage Cafe</a><br>The Cottage Cafe is a local (mainly) breakfast diner where you can get great pancakes all day and dinner if you choose. </p>",
-                              "icon": "restaurant"
-                            },
-                            "geometry": {
-                              "type": "Point",
-                              "coordinates": [-120.919258, 47.192930],
-                            }
-                          }
-                        ]
-                      }
-                    },
-
-
-                    "layout": {
-                      "icon-image": "{icon}-15",
-                      "icon-allow-overlap": true
-                    }
-                  });
-                  // When a click event occurs on a feature in the places layer, open a popup at the
-                  // location of the feature, with description HTML from its properties.
-                  map.on('click', 'places', function (e) {
-                    var coordinates = e.features[0].geometry.coordinates.slice();
-                    var description = e.features[0].properties.description;
-                    // Ensure that if the map is zoomed out such that multiple
-                    // copies of the feature are visible, the popup appears
-                    // over the copy being pointed to.
-                    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-                      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-                    }
-                    new mapboxgl.Popup()
-                      .setLngLat(coordinates)
-                      .setHTML(description)
-                      .addTo(map);
-                  });
-                  // Change the cursor to a pointer when the mouse is over the places layer.
-                  map.on('mouseenter', 'places', function () {
-                    map.getCanvas().style.cursor = 'pointer';
-                  });
-                  // Change it back to a pointer when it leaves.
-                  map.on('mouseleave', 'places', function () {
-                    map.getCanvas().style.cursor = '';
-                  });
-                });
-              </script>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
+  </section>
 
-    <!-- <script src="assets/js/index.js"></script>> -->
-    <!-- </div> -->
+  <div class="overflow-wrapper">
+    <div class="section-separator about-section-separator">
+    </div>
+  </div>
+
+  <a id="attractions"></a>
+  <section id="blueprint">
+    <div id="interactive-map" class="attraction-map">
+      <div class="interactive-map-intro">
+        <div class="text-container">
+          <h2>Local Attractions Near Timber Cove</h2>
+          <p>Use our custom map to look around the area to find places to eat or things to do.</p>
+          <p class="subtext"><small><i class="fas fa-info"></i> Scroll or pinch to zoom, click a waypoint to view
+              more
+              information about that landmark.</small></p>
+        </div>
+
+        <i class="fas fa-map-marked-alt showcase-icon"></i>
+      </div>
+      <div class="interactive-map-background"></div>
+      <div id="iframe-row">
+        <div id="iframe-container">
+          <div id='map'></div>
+          <script>
+            mapboxgl.accessToken =
+              'pk.eyJ1Ijoib2xmaW5ueXR3b3RpbWUiLCJhIjoiY2p0YnAybGVwMG8zeDQzcDdhaWN6dHBzYiJ9.cooh7deSYjLvZtIHCA06PA';
+            var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/mapbox/streets-v9',
+              center: [-121.102323, 47.286711],
+              zoom: 10.15
+            });
+            map.on('load', function () {
+              // Add a layer showing the places.
+              map.addLayer({
+                "id": "places",
+                "type": "symbol",
+                "source": {
+                  "type": "geojson",
+                  "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<p><a href=\"index.html\" target=\"_blank\" title=\"Opens in a new window\">Timber Cove</a><br><hr>Where the Property Resides</p>",
+                          "icon": "star"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-121.102323, 47.286711]
+                        }
+                      }, {
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Cascade Playtime</a><br>Motorsports and mountain activities rental shop. </p>",
+                          "icon": "snowmobile"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-121.074068, 47.273818]
+                        }
+                      }, {
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Hex Mountain Hiking Trail</a><br>Touted as the worlds best snowshoeing trail, this is a great year round hike that is great for snowmobiling, cross country skiing or maybe just a leisurely walk.  </p>",
+                          "icon": "bicycle"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-121.097482, 47.292557]
+                        }
+                      }, {
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Village Pizza</a><br>This pizza place is known as one the best restaurants in the area, serving fresh hot pizza all day. </p>",
+                          "icon": "restaurant"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-120.993580, 47.223153]
+                        }
+                      }, {
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<strong>The Brick Bar and Restaurant</strong><p>This bar has been in Roslyn since the 1800s, the saloon also features live performances from a range of artists.<a href=\"http://www.bricksaloon.com/\" target=\"_blank\" title=\"Opens in a new window\"></p>",
+                          "icon": "bar"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-120.992586, 47.222930]
+                        }
+                      }, {
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<strong>French Cabin Campground</strong><p>This popular local camping spot features natural a great open area thats perfect for motorized or non motorized recreation or maybe pitching a tent for the night or there is some amazing places to hike around this area.<a href=\"http://www.bricksaloon.com/\" target=\"_blank\" title=\"Opens in a new window\"></p>",
+                          "icon": "picnic-site"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-121.113994, 47.354595]
+                        }
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<strong>Speelyi Beach Park</strong><p>This beautiful beach both serves and a boat launch and an amazing place to set up shop and relax and soak in the beach weather.<p><a href=\"http://www.bricksaloon.com/\" target=\"_blank\" title=\"Opens in a new window\"></p>",
+                          "icon": "swimming"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-121.063417, 47.253331]
+                        }
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<strong>Prospecter Golf Course</strong><a href=\"https://www.google.com/maps/place/Prospector+Golf+Course/@47.2083343,-121.016085,17z/data=!3m1!4b1!4m5!3m4!1s0x549a0e47cba04b1b:0xd76603f969662496!8m2!3d47.2083307!4d-121.0138963\" target=\"_blank\" title=\"Opens in a new window\"><p>This golf course is inside of the prestigious Suncadia Golf Resort, around the course are driving ranges and any amenity you would ever need</p>",
+                          "icon": "golf"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-121.011818, 47.209014]
+                        }
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<a href=\"https://www.google.com/maps/place/Tumble+Creek+Club/@47.2172857,-121.0494876,15.34z/data=!4m8!1m2!2m1!1sTumble+Creek+Golf+Course+!3m4!1s0x0:0x9797d9a0d98f8e8b!8m2!3d47.2137127!4d-121.0486293\" target=\"_blank\" title=\"Opens in a new window\"><strong>Tumble Creek Golf Course</strong><p>The Tumble Creek golf course like Suncadia, resides inside of it's parents clubhouse/resort. This course is similar in difficulty to the Prospector course and features the same amenities that Prospecter has.</p>",
+                          "icon": "golf"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-121.048264, 47.213782]
+                        }
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<strong>Suncadia Swimming Center</strong><a href=\"https://www.google.com/maps/place/Suncadia+Swim+%26+Fitness+Center/@47.20911,-121.0209809,17z/data=!4m12!1m6!3m5!1s0x549a0e47cba04beb:0xe000fec028c3d4e8!2sSuncadia+Resort!8m2!3d47.2091067!4d-121.0187924!3m4!1s0x549a0e4120ac47c1:0x1c4f2ee5aaa50c27!8m2!3d47.2102045!4d-121.0156207/\" target=\"_blank\" title=\"Opens in a new window\"><p>This massive Swimming facility is great for the whole family because there's something for everyone to do, any age. Theres a calming steam room/sauna, a hot tub, two massive multi story waterslides and finally a few very large pools.</p>",
+                          "icon": "swimming"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-121.012927, 47.211112]
+                        }
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<strong>Speelyi Beach Park</strong><p><a href=\"http://www.bricksaloon.com/\" target=\"_blank\" title=\"Opens in a new window\"></p>",
+                          "icon": "swimming"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-121.094853, 47.384011]
+                        }
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<strong>Suncadia Resort</strong><a href=\"https://www.google.com/maps/place/Suncadia+Resort/@47.20911,-121.0209809,17z/data=!3m1!4b1!4m5!3m4!1s0x549a0e47cba04beb:0xe000fec028c3d4e8!8m2!3d47.2091067!4d-121.0187924/\" target=\"_blank\" title=\"Opens in a new window\"><p>The Suncadia Resort is a great destination for those of in search of a very high class dining experience or maybe want to get drinks. </p>",
+                          "icon": "restaurant"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-121.016553, 47.209796]
+                        }
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<strong>The Red Bird Cafe</strong><a href=\"https://www.google.com/maps/place/The+Red+Bird+Cafe+%26+Bakery/@47.2229443,-120.9951211,17z/data=!3m1!4b1!4m5!3m4!1s0x549a0e1fbb0f9caf:0xf2fa0f47f5ca111e!8m2!3d47.2229407!4d-120.9929324/\" target=\"_blank\" title=\"Opens in a new window\"><p>This cute little cafe is a delicious restaurant that mainly serves hand made sandwiched and hand cooked bakery goods. You can also get a beer, an italian soda or maybe old fashioned cafe.</p>",
+                          "icon": "restaurant"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-120.992858, 47.222973]
+                        }
+                      }, {
+                        "type": "Feature",
+                        "properties": {
+                          "description": "<p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">The Cottage Cafe</a><br>The Cottage Cafe is a local (mainly) breakfast diner where you can get great pancakes all day and dinner if you choose. </p>",
+                          "icon": "restaurant"
+                        },
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-120.919258, 47.192930],
+                        }
+                      }
+                    ]
+                  }
+                },
+
+
+                "layout": {
+                  "icon-image": "{icon}-15",
+                  "icon-allow-overlap": true
+                }
+              });
+              // When a click event occurs on a feature in the places layer, open a popup at the
+              // location of the feature, with description HTML from its properties.
+              map.on('click', 'places', function (e) {
+                var coordinates = e.features[0].geometry.coordinates.slice();
+                var description = e.features[0].properties.description;
+                // Ensure that if the map is zoomed out such that multiple
+                // copies of the feature are visible, the popup appears
+                // over the copy being pointed to.
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                  coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+                new mapboxgl.Popup()
+                  .setLngLat(coordinates)
+                  .setHTML(description)
+                  .addTo(map);
+              });
+              // Change the cursor to a pointer when the mouse is over the places layer.
+              map.on('mouseenter', 'places', function () {
+                map.getCanvas().style.cursor = 'pointer';
+              });
+              // Change it back to a pointer when it leaves.
+              map.on('mouseleave', 'places', function () {
+                map.getCanvas().style.cursor = '';
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- <script src="assets/js/index.js"></script>> -->
+  <!-- </div> -->
 
 </body>
 
