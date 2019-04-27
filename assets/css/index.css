@@ -723,7 +723,7 @@ section {
 }
 
 .tech-paragraph {
-  width: 40%;
+  max-width: 40%;
   padding: 10px;
   margin-top: 5vh;
   font-size: 1.33em;
@@ -734,7 +734,7 @@ section {
 }
 
 .tech-p2 {
-  width: 40%;
+  max-width: 40%;
   padding: 10px;
   margin-top: 5vh;
   font-size: 1.33em;
@@ -744,4 +744,32 @@ section {
   left: 35%;
   transform: translateX(50%);
 
+}
+
+.side-tech-icon {
+  font-size: 15vh;
+  color: var(--primary);
+  margin-top: -17%;
+  left: 20%;
+  position: relative;
+  transform: translateX(50%);
+}
+
+.side-tech-icon-2 {
+  font-size: 15vh;
+  margin-top: -20%;
+  color: var(--primary);
+  right: 24%;
+  position: relative;
+  transform: translateX(50%);
+}
+
+@media (orientation: portrait) {
+  .side-tech-icon {
+    margin-top: -30%
+  }
+
+  .side-tech-icon-2 {
+    margin-top: -30%
+  }
 }
