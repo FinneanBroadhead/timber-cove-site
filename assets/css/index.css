@@ -752,7 +752,6 @@ section {
 .side-tech-icon {
   font-size: 15vh;
   color: var(--primary);
-  margin-top: -17%;
   left: 20%;
   position: relative;
   transform: translateX(50%);
@@ -766,8 +765,8 @@ section {
 .tech-container {
   height: 35vh;
   background-color: rgba(18, 28, 29, 0.527);
-  align-content: center;
-  display: grid;
+  align-items: center;
+  display: flex;
 }
 
 .env {
@@ -777,7 +776,6 @@ section {
 
 .side-tech-icon-2 {
   font-size: 15vh;
-  margin-top: -14%;
   color: var(--primary);
   right: 70%;
   position: absolute;
