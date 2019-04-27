@@ -708,3 +708,41 @@ section {
     display: none;
   }
 }
+
+.icon-row {
+  justify-content: center;
+  border: 1px solid var(--primary);
+}
+
+.icon-row i {
+  color: var(--primary)
+}
+
+.tech-icon {
+  padding: 2vw;
+  font-size: 3vh;
+}
+
+.tech-paragraph {
+  width: 40%;
+  padding: 10px;
+  margin-top: 5vh;
+  font-size: 1.33em;
+  color: white;
+  background-color: rgba(255, 255, 255, .4);
+  left: 5%;
+  position: relative;
+}
+
+.tech-p2 {
+  width: 40%;
+  padding: 10px;
+  margin-top: 5vh;
+  font-size: 1.33em;
+  color: white;
+  background-color: rgba(255, 255, 255, .4);
+  position: relative;
+  left: 35%;
+  transform: translateX(50%);
+
+}
