@@ -32,7 +32,6 @@ body,
 html {
   position: relative;
   overflow-x: hidden !important;
-  scroll-behavior: smooth;
 }
 
 body {
