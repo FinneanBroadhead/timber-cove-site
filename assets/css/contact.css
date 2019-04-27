@@ -131,8 +131,8 @@ body {
 
 .contact-icon {
   text-align: center;
-  font-size: 4vh;
-  padding-bottom: 25px;
+  font-size: 35px;
+  padding: 25px;
   align-content: center;
   color: var(--darkorange);
 
@@ -610,6 +610,10 @@ body {
   color: white;
 }
 
+.quarter-page {
+  border: 1px solid white;
+}
+
 #booking .booking-info {
   font-family: 'Work Sans', sans-serif;
   position: relative;
@@ -647,15 +651,19 @@ a {
   position: relative;
   z-index: 1;
   padding: 40px 20px;
-
+  background: rgb(30, 46, 47);
   border: 1px solid #e5e5e5;
   text-align: center;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
+  height: 280px;
 }
 
-
+.pinterest {
+  height: 50px !important;
+  width: auto !important;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single-service-area {
@@ -925,10 +933,14 @@ a {
 
   height: 100%;
   font-size: 50px;
-  line-height: 140px;
+  line-height: 220px;
   background: #34495e;
   z-index: 1;
   transition: transform 0.6s;
+}
+
+p {
+  z-index: 0;
 }
 
 .container .social-ex-container {
