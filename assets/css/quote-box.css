@@ -1,0 +1,126 @@
+.quote-box {
+    position: relative;
+    height: 25vh;
+    margin-top: 15px;
+    border: 5px solid white;
+    border-radius: 10px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    margin: 70px 0px 40px 0px;
+    padding: 0px;
+    transition: 0.3s;
+}
+.quote-box .testimonial {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    font-size: 1.5vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 50vw;
+}
+.quote-box .testimonial .author {
+    color: var(--primary);
+}
+.quote-box .testimonial.shown {
+    animation: testimonial-show 0.75s 0.2s forwards;
+    animation-timing-function: cubic-bezier(0, 0.2, 0.8, 1.3);
+}
+.quote-box .testimonial:not(.shown) {
+    animation: testimonial-hide 0.5s 0s forwards;
+    animation-timing-function: ease-in;
+}
+.next-arrow,
+.prev-arrow {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 5vw;
+    padding: 0px;
+    margin: 0px;
+    transform: translateY(-50%);
+    text-align: left;
+    transition: 0.2s;
+    transition-timing-function: cubic-bezier(0, 0.2, 0.8, 1.3);
+}
+.next-arrow.disabled,
+.prev-arrow.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.next-arrow {
+    right: -50px;
+}
+.prev-arrow {
+    left: -50px;
+    -moz-transform:    translateY(-50%) scaleX(-1);
+    -o-transform:      translateY(-50%) scaleX(-1);
+    -webkit-transform: translateY(-50%) scaleX(-1);
+    transform:         translateY(-50%) scaleX(-1);
+}
+.next-arrow:hover,
+.prev-arrow:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+.next-arrow:active,
+.prev-arrow:active {
+    transition: 0.1s;
+    font-size: 6vw;
+}
+
+@media (orientation: portrait) {
+    .quote-box {
+        height: 30vh;
+        margin: 70px 0px 40px 0px;
+    }
+    .quote-box .testimonial {
+        width: 90%;
+        font-size: 3.5vw;
+    }
+    .next-arrow,
+    .prev-arrow {
+        font-size: 9vw;
+        bottom: 0px;
+        transform: translateY(100%);
+        z-index: 999;
+    }
+    .next-arrow:active {
+        font-size: 9vw;
+        /* transform: translate(-10px, 100%); */
+    }
+    .prev-arrow:active {
+        font-size: 9vw;
+        transform: translate(10px, 100%) scaleX(-1);
+    }
+    .next-arrow {
+        right: 15px;
+    }
+    .prev-arrow {
+        left: 15px;
+        transform: translate(0px, 100%) scaleX(-1);
+    }
+}
+
+@keyframes testimonial-show {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes testimonial-hide {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -100%);
+    }
+}
