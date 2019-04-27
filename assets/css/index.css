@@ -711,6 +711,8 @@ section {
 .icon-row {
   justify-content: center;
   border: 1px solid var(--primary);
+  position: relative;
+  padding-top: 5vh;
 }
 
 .icon-row i {
@@ -719,6 +721,7 @@ section {
 
 .tech-icon {
   padding: 2vw;
+  position: relative;
   font-size: 3vh;
 }
 
@@ -755,13 +758,23 @@ section {
   transform: translateX(50%);
 }
 
+.tech-icons {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.tech-container {
+  height: 35vh;
+
+}
+
 .side-tech-icon-2 {
   font-size: 15vh;
-  margin-top: -20%;
+  margin-top: -15%;
   color: var(--primary);
-  right: 24%;
-  position: relative;
-  transform: translateX(50%);
+  right: 70%;
+  position: absolute;
+  transform: translateX(-50%);
 }
 
 @media (orientation: portrait) {
@@ -772,4 +785,10 @@ section {
   .side-tech-icon-2 {
     margin-top: -30%
   }
+
+  .tech-container {
+    height: 75vh;
+
+  }
+
 }
