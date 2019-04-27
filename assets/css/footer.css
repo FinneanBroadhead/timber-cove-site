@@ -6,6 +6,7 @@ footer {
     background-color: white;
     box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
 }
+
 footer .footer-text {
     position: absolute;
     top: 50%;
@@ -15,10 +16,11 @@ footer .footer-text {
     color: black;
     padding: 0px 40px;
     text-align: left;
-    font-size: 1vw;
+    font-size: 1.5vw;
     transition: 0.2s;
-    transition-timing-function: cubic-bezier(.4,0,0.3,1.8);
+    transition-timing-function: cubic-bezier(.4, 0, 0.3, 1.8);
 }
+
 footer .footer-text:hover {
     margin-left: 5px;
 }
@@ -31,6 +33,7 @@ footer .footer-logo {
     padding-right: 40px;
     height: 56px;
 }
+
 footer .footer-logo img {
     height: 100%;
     width: auto;
