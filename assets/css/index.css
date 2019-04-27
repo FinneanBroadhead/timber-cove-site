@@ -42,8 +42,12 @@ body {
   background-color: #fff !important;
 }
 
+footer {
+  overflow: hidden !important;
+}
+
 section {
-  overflow-y: hidden;
+  overflow: hidden !important;
 }
 
 #bgvid {
