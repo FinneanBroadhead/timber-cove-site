@@ -712,7 +712,9 @@ section {
   justify-content: center;
   border: 1px solid var(--primary);
   position: relative;
-  padding-top: 5vh;
+  padding: 5vh;
+  display: grid;
+  align-content: center;
 }
 
 .icon-row i {
@@ -722,7 +724,7 @@ section {
 .tech-icon {
   padding: 2vw;
   position: relative;
-  font-size: 3vh;
+  font-size: 7vh;
 }
 
 .tech-paragraph {
