@@ -222,6 +222,10 @@ section {
   position: relative;
 }
 
+#work {
+  background-image: linear-gradient(white, rgb(10, 50, 59));
+}
+
 #about::before {
   content: "";
   position: absolute;
