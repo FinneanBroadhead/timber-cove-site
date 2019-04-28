@@ -217,6 +217,7 @@ section {
 
 #about {
   width: 100%;
+  height: auto;
   min-height: 100%;
   position: relative;
 }
@@ -846,5 +847,9 @@ section {
   .tech-container {
     height: 55vh;
     background-color: rgba(0, 0, 0, 0)
+  }
+
+  .img.thumb {
+    display: none;
   }
 }
