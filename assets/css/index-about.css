@@ -670,7 +670,7 @@ screen and (min-width: 40em) {
 	}
 
 	.grid-x>.medium-8 {
-		width: 50%
+		/* width: 50% */
 	}
 
 	.grid-x>.medium-9 {
@@ -751,7 +751,7 @@ screen and (min-width: 64em) {
 	}
 
 	.grid-x>.large-8 {
-		width: 50%
+		/* width: 50% */
 	}
 
 	.grid-x>.large-9 {

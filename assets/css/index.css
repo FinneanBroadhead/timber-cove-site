@@ -102,6 +102,8 @@ section {
   border: 2px solid white;
 }
 
+.entry-content {}
+
 .about-heading .heading {
   font-family: 'Open Sans', sans-serif;
   font-size: 2vw;
@@ -802,22 +804,7 @@ section {
     display: none;
   }
 
-  .tech-p2 {
-    margin-top: 0vh;
-
-    max-width: 90%;
-  }
-
-  .tech-paragraph {
-
-    margin-top: 2vh;
-    max-width: 90%;
-  }
-
-  .tech-container {
-    height: 75vh;
-
-  }
+ 
 
   .side-tech-icon {
     display: none;
@@ -834,7 +821,7 @@ section {
   .side-tech-icon-2 {
     display: none;
   }
-
+  
   .tech-p2 {
     margin-top: 0vh;
 
@@ -848,6 +835,7 @@ section {
   }
 
   .tech-container {
+    display: flex;
     height: 55vh;
     background-color: rgba(0, 0, 0, 0)
   }
