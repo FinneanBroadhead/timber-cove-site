@@ -56,6 +56,11 @@ body {
   text-align: center;
 }
 
+.full-page {
+  height: 100vh;
+  width: 100vw;
+}
+
 .landing-header .heading {
   font-family: 'source-sans-pro', sans-serif;
   font-size: 10.5vh;
@@ -612,6 +617,7 @@ body {
 
 .quarter-page {
   border: 1px solid white;
+  align-items: center;
 }
 
 #booking .booking-info {
