@@ -65,7 +65,7 @@ section {
 
 .jumbo-heading {
   font-family: 'Open Sans', sans-serif;
-  font-size: 7.5vw;
+  font-size: 6em;
   line-break: loose;
   position: relative;
   background: transparent no-repeat center/cover;
@@ -74,8 +74,10 @@ section {
   color: white;
   transform: translateX(-50%);
   text-transform: uppercase;
-  text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 7px 1px #bbb, 0px 7px 1px #777, 0px 8px 1px #444,
-    0px 5px 15px #000;
+  text-shadow: .5px 1px 2px #DDEEFF,
+  0 0 0 black,
+  -1px 1px 0 #DDEEFF,
+  1px 1px 0 white;
 }
 
 .heading-section {
@@ -810,20 +812,9 @@ section {
 }
 
 @media (orientation: portrait) {
-  .side-tech-icon {
-    display: none;
-
-  }
-
-  .side-tech-icon-2 {
-    display: none;
-  }
-
- 
-
-  .side-tech-icon {
-    display: none;
-  }
+.tech-icon {
+  display: none !important;
+}
 
 }
 
