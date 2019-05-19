@@ -727,7 +727,18 @@ section {
   display: grid;
   align-content: center;
 }
-
+.tech-p {
+  position: relative;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .4);
+  padding: 10px;
+  color: white;
+}
+.tech-container {
+  display: flex; 
+  align-items: center;
+  width: 75%;
+}
 .icon-row i {
   color: var(--primary)
 }
@@ -735,7 +746,8 @@ section {
 .tech-icon {
   padding: 2vw;
   position: relative;
-  font-size: 7vh;
+  font-size: 10vh;
+  color: var(--primary);
 }
 
 .tech-paragraph {
@@ -780,6 +792,9 @@ section {
   align-items: center;
   display: flex;
 }
+.tech-p {
+  margin: 2vw;
+}
 
 .env {
   display: grid;
@@ -787,7 +802,7 @@ section {
 }
 
 .side-tech-icon-2 {
-  font-size: 15vh;
+  font-size: 20vh;
   color: var(--primary);
   right: 70%;
   position: absolute;
@@ -812,22 +827,11 @@ section {
 
 }
 
-@media (max-width: 882px) {
-  .side-tech-icon {
-    display: none;
+@media (max-width: 992px) {
 
-  }
-
-  .side-tech-icon-2 {
-    display: none;
-  }
-  
-  .tech-p2 {
-    margin-top: 0vh;
-
-    max-width: 60%;
-  }
-
+	.grid-x>.medium-8 {
+		width: 100% !important;
+	}
   .tech-paragraph {
 
     margin-top: 0vh;
@@ -840,7 +844,4 @@ section {
     background-color: rgba(0, 0, 0, 0)
   }
 
-  .img.thumb {
-    display: none;
-  }
 }

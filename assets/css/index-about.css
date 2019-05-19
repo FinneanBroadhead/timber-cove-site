@@ -670,9 +670,8 @@ screen and (min-width: 40em) {
 	}
 
 	.grid-x>.medium-8 {
-		/* width: 50% */
+		width: 50%
 	}
-
 	.grid-x>.medium-9 {
 		width: 56.25%
 	}
