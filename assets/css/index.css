@@ -810,20 +810,9 @@ section {
 }
 
 @media (orientation: portrait) {
-  .side-tech-icon {
-    display: none;
-
-  }
-
-  .side-tech-icon-2 {
-    display: none;
-  }
-
- 
-
-  .side-tech-icon {
-    display: none;
-  }
+.tech-icon {
+  display: none !important;
+}
 
 }
 
