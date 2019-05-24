@@ -83,7 +83,7 @@ section {
 .heading-section {
   position: relative;
   z-index: -1;
-  padding-top: 14vh;
+  padding-top: 5vh;
 }
 
 .about-heading {
@@ -225,7 +225,7 @@ section {
 }
 
 #work {
-  background-image: linear-gradient(white, rgb(10, 50, 59));
+  background-image: linear-gradient(rgb(73, 73, 73), rgb(10, 50, 59));
 }
 
 #about::before {
