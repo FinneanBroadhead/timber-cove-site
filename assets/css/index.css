@@ -84,8 +84,6 @@ section {
   position: relative;
   z-index: -1;
   padding-top: 13vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 
 .about-heading {
@@ -237,7 +235,7 @@ section {
   height: 100%;
   top: 0px;
   left: 0px;
-  background-image: url('../imgs/about-bg.jpg');
+  background-color: rgb(28, 28, 29);
   z-index: -1;
   background-size: cover;
   filter: blur(5px) brightness(0.7);
@@ -351,7 +349,6 @@ section {
 
 #about .about-paragraph .side-paragraph {
   position: absolute;
-  top: 50%;
   left: 50%;
   width: 90%;
   transform: translate(-50%, -50%);
