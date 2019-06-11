@@ -1,0 +1,47 @@
+ .container.vrbo-container {
+  background-size: contain;
+  background-position: center;
+  color: black;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(125, 185, 232, .5) 100%),url("../imgs/calendar.png");
+  
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(125, 185, 232, .5) 100%),url("../imgs/calendar.png");
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(125, 185, 232, .5) 100%),url("../imgs/calendar.png");
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#65696d', endColorstr='#007db9e8', GradientType=0);
+  /* IE6-9 */	position: absolute;
+  
+	left: 50%;
+	height: 75%;
+	align-self: center;
+	right: 50%;
+	top: 65%;
+	border: 3px solid white;
+	transform: translate(-50%, -50%);
+	width: 75%;
+}
+.vrbo-header {
+  font-size: 2.2rem;
+  margin: 15px;
+}
+
+.page-heading h1 {
+  position: relative;
+  font-size: 3.4rem;
+  margin-top: 10vh;
+  text-align: center;
+  color: aqua;
+}
+
+
+.full-page {
+  height: 100vh;
+  width: 100vw;
+}
+body, html {
+  background-color: rgb(38, 38, 39);
+  height: 100%;
+}
+
+

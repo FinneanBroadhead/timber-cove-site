@@ -107,7 +107,7 @@ body {
   animation-timing-function: ease-in;
 }
 #contact-options {
-  margin-top: 5vh;
+  margin-top: 0vh;
 }
 #contact-options .col-lg-4:nth-child(1) .triplet-about-box {
   animation-delay: 0.25s;

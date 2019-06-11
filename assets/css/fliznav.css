@@ -5,33 +5,50 @@ a {
 
 
 .nav-logo {
-  height:40px;
+  height:55px;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 
 .navbar-brand {
-  font-family: sans-serif;
+  font-family: 'Helvetica Neue';
   font-weight:bold;
+  display: none;
 }
 
 .navbar {
-	border: 1px solid #ccc;
-	background-color: rgba(204, 204, 204, 0.8);
-}
+  border: 1px solid #ccc;
+  background-color: rgb(30, 29, 31);
 
-.airbnb {
-  font-weight:700;
-  font-family:sans-serif;
-  color:#FF5A5F;
 }
 
 .air-descrip {
   letter-spacing: -0.8px;
 }
 
+.navbar-collapse {
+  background-color: rgb(30, 29, 31);
 
-
+}
+.navbar-toggler {
+  color: white;
+}
 .nav-link a {
-	color: black !important;
-	font-size: 1.5em;
-  font-family: "Open Sans";
+	color: white !important;
+	font-size: 1.35em;
+  font-family: 'Helvetica Neue';
+}
+@media (orientation: portrait) {
+  .nav-logo {
+    display: none;
+  }
+  .navbar-brand {
+    display: block;
+    text-align: center;
+    color: rgb(22, 110, 110) !important;
+    position: absolute;
+    width: 100%;
+    top: -10%;
+  }
 }
