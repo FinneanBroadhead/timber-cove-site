@@ -9949,11 +9949,11 @@ screen and (min-width: 40em) {
 screen and (min-width: 40em) {
 	.sidebyside.complex .entry-content {
 		-webkit-box-flex: 0;
-		-ms-flex: 0 0 calc(100% - 12.5vw);
-		flex: 0 0 calc(100% - 12.5vw);
-		width: calc(100% - 12.5vw);
-		margin-left: 6.25vw;
-		margin-right: 6.25vw
+		-ms-flex: 0 0 calc(100% - 4vw);
+		flex: 0 0 calc(100% - 4vw);
+		width: calc(100% - 4vw);
+		margin-left: 3.25vw;
+		margin-right: 3.25vw
 	}
 
 	.sidebyside.complex.thumb-len-3 .entry-content {

@@ -64,7 +64,7 @@ section {
 }
 
 .jumbo-heading {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 6em;
   line-break: loose;
   position: relative;
@@ -74,9 +74,7 @@ section {
   color: white;
   transform: translateX(-50%);
   text-transform: uppercase;
-  text-shadow: .5px 1px 2px #DDEEFF,
-    0 0 0 black,
-    -1px 1px 0 #DDEEFF,
+  text-shadow: 0.5px 1px 2px #ddeeff, 0 0 0 black, -1px 1px 0 #ddeeff,
     1px 1px 0 white;
 }
 
@@ -101,10 +99,11 @@ section {
   border: 2px solid white;
 }
 
-.entry-content {}
+.entry-content {
+}
 
 .about-heading .heading {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 2vw;
   line-break: loose;
   position: relative;
@@ -114,12 +113,13 @@ section {
   color: white;
   transform: translateX(-50%);
   text-transform: uppercase;
-  text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 7px 1px #bbb, 0px 8px 1px #777, 0px 9px 1px #444,
-    0px 10px 20px #000;
+  text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc,
+    0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 7px 1px #bbb,
+    0px 8px 1px #777, 0px 9px 1px #444, 0px 10px 20px #000;
 }
 
 .about-heading .subheading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 3%;
   text-align: center;
   color: white;
@@ -138,11 +138,12 @@ section {
 
 .heading-2 {
   font-size: 4vh;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: white;
   text-transform: uppercase;
-  text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 8px 1px #bbb, 0px 7px 1px #777, 0px 9px 1px #555, 0px 10px 1px #444,
-    0px 10px 10px #000;
+  text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc,
+    0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbb, 0px 8px 1px #bbb,
+    0px 7px 1px #777, 0px 9px 1px #555, 0px 10px 1px #444, 0px 10px 10px #000;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -224,7 +225,7 @@ section {
 }
 
 #work {
-  background-image: linear-gradient(rgb(73, 73, 73), rgb(10, 50, 59));
+  background-image: linear-gradient(rgb(16, 21, 22), rgb(73, 73, 73));
 }
 
 #about::before {
@@ -261,9 +262,21 @@ section {
   left: 0px;
   overflow-x: hidden !important;
   overflow-y: hidden !important;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(125, 185, 232, 0) 100%);
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(125, 185, 232, 0) 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(125, 185, 232, 0) 100%);
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(125, 185, 232, 0) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#65696d', endColorstr='#007db9e8', GradientType=0);
 }
 
@@ -342,7 +355,7 @@ section {
 }
 
 #about .about-paragraph {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   position: relative;
 }
 
@@ -426,7 +439,7 @@ section {
 
   padding: 20px 26px 30px 45px;
   border: 2px solid #2d3d55;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: black;
   font-weight: 300;
   text-align: center;
@@ -444,7 +457,7 @@ section {
 }
 
 .text-block-2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1vw;
   text-align: center;
 }
@@ -457,7 +470,11 @@ section {
   transform: translate(-50%, -50%);
   z-index: 9;
   background-color: #856035;
-  background-image: linear-gradient(rgba(216, 220, 224, 0.9), rgba(216, 220, 224, 0.9)), url(../imgs/header-background-image.jpeg);
+  background-image: linear-gradient(
+      rgba(216, 220, 224, 0.9),
+      rgba(216, 220, 224, 0.9)
+    ),
+    url(../imgs/header-background-image.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
@@ -489,7 +506,21 @@ section {
   width: 100%;
   height: 100%;
   background-color: white;
-  background-image: url('../imgs/_A9_6595-HDR.jpg');
+  background-image: url("../imgs/_A9_6595-HDR.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: translateY(-7.5vh);
+  filter: blur(10px) brightness(0.75);
+  transform: scale(1.1);
+}
+#interactive-map .map-background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(16, 21, 22);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -533,7 +564,7 @@ section {
 .interactive-map-intro .subtext {
   position: relative;
   margin-top: 20px;
-  color: rgba(210, 210, 210, 1.0);
+  color: rgba(210, 210, 210, 1);
 }
 
 .interactive-map-intro .subtext::after {
@@ -709,7 +740,6 @@ section {
 
   .interactive-map-intro .subtext i {
     display: none;
-
   }
 
   .interactive-map-intro .showcase-icon {
@@ -729,7 +759,7 @@ section {
 .tech-p {
   position: relative;
   text-align: center;
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 10px;
   color: white;
 }
@@ -738,10 +768,24 @@ section {
   display: flex;
   align-items: center;
   width: 75%;
+  margin-bottom: 5vh;
 }
+.timber-holder img {
+  transform: rotate(245deg);
+  -ms-transform: rotate(245deg);
+  -moz-transform: rotate(245deg);
+  -webkit-transform: rotate(245deg);
+  -o-transform: rotate(245deg);
+  height: 16vh;
+}
+.timber-holder {
+  left: -20%;
+  position: relative;
+  display: flex;
 
+}
 .icon-row i {
-  color: var(--primary)
+  color: var(--primary);
 }
 
 .tech-icon {
@@ -756,7 +800,7 @@ section {
   padding: 10px;
   font-size: 1.33em;
   color: white;
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, 0.4);
   left: 5%;
   position: relative;
   margin: 20px;
@@ -767,7 +811,7 @@ section {
   padding: 10px;
   font-size: 1.33em;
   color: white;
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, 0.4);
   position: relative;
   left: 10%;
   transform: translateX(50%);
@@ -815,25 +859,26 @@ section {
   .tech-icon {
     display: none !important;
   }
-
 }
 
 @media (max-width: 992px) {
-
-  .grid-x>.medium-8 {
+  .grid-x > .medium-8 {
     width: 100% !important;
   }
 
   .tech-paragraph {
-
     margin-top: 0vh;
     max-width: 60%;
   }
-
+  .timber-holder {
+    display: none !important;
+  }
   .tech-container {
     display: flex;
     height: 55vh;
-    background-color: rgba(0, 0, 0, 0)
+    background-color: rgba(0, 0, 0, 0);
   }
-
 }
+/* @media (max-width: 700px) {
+  
+} */

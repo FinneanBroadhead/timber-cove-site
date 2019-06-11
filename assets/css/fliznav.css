@@ -1,49 +1,37 @@
-/* This class is added on scroll */
-.fixed {
-	position: fixed;
-	top: 0;
-	height: 70px;
-	z-index: 999 !important;
+
+a {
+  text-decoration: none;
 }
 
-/* Navigation Settings */
-nav {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	height: 70px;
-	background: rgba(10, 50, 59, 0.903);
-	z-index: 999 !important;
+
+.nav-logo {
+  height:40px;
 }
 
-nav .nav-link {
-	display: inline-block;
-	padding: 24px 10px;
-	text-align: center;
+.navbar-brand {
+  font-family: sans-serif;
+  font-weight:bold;
 }
 
-nav .nav-link.active {
-	cursor: default;
+.navbar {
+	border: 1px solid #ccc;
+	background-color: rgba(204, 204, 204, 0.8);
 }
 
-nav .nav-link a {
-	color: white;
-	font-family: sans-serif;
-	text-transform: uppercase;
-	text-align: center;
+.airbnb {
+  font-weight:700;
+  font-family:sans-serif;
+  color:#FF5A5F;
 }
 
-@media (orientation: portrait) {
+.air-descrip {
+  letter-spacing: -0.8px;
+}
 
-	nav .nav-link {
-		padding: 24px 4px;
-		text-align: center;
 
-	}
 
-	nav li a {
-		font-size: 2vw;
-	}
-
+.nav-link a {
+	color: black !important;
+	font-size: 1.5em;
+  font-family: "Open Sans";
 }
