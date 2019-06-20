@@ -1,0 +1,17 @@
+.image-carousel {
+    /* position: fixed; */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1200;
+}
+#lightgallery {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+}
