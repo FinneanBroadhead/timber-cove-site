@@ -1,13 +1,11 @@
 @font-face {
 	font-family: 'Din';
-	src: url("../fonts/DINWeb-Bold.woff") format("woff");
 	font-weight: bold;
 	font-style: normal
 }
 
 @font-face {
 	font-family: 'Din';
-	src: url("../fonts/DINWeb.woff") format("woff");
 	font-weight: normal;
 	font-style: normal
 }

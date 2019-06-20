@@ -1,22 +1,10 @@
-var currentHoveredWorkblock = undefined;
 $(document).ready(function() {
     $('.work-block').each(function(index) {
-        $(this).hover(function() {
-            currentHoveredWorkblock = $(this);
-
-            $('.work-block').each(function(index) {
-                if (!$(this).is(currentHoveredWorkblock)) {
-                    $(this).addClass('disabled');
-                }
-            });
-        },
-        function() {
-            $('.work-block').each(function(index) {
-                $(this).removeClass('disabled');
-            });
+        $(this).click(function() {
+            console.log("HOV");
+            console.log("Data: " + $(this).data("type"));
+            console.log($(this).find('img').attr("src"));
         });
-        var navOpen = "false";
-
     });
     
     // Enable smooth scroll with click-to-navigate
