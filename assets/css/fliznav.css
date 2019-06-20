@@ -18,18 +18,23 @@ a {
 }
 
 .navbar {
-  border: 1px solid #ccc;
-  background-color: rgb(30, 29, 31);
-
+  background-color: rgba(30, 29, 31, 0.7);
+}
+.navbar-collapse.show {
+  background-color: rgba(30, 29, 31, 0.9);
+  transition: 0.3s;
+}
+@media (max-width: 1200px) {
+  .navbar {
+    background-color: rgba(30, 29, 31, 1.0);
+  }
+  .navbar-collapse.show {
+    background-color: rgba(30, 29, 31, 1.0);
+  }
 }
 
 .air-descrip {
   letter-spacing: -0.8px;
-}
-
-.navbar-collapse {
-  background-color: rgb(30, 29, 31);
-
 }
 .navbar-toggler {
   color: white;
