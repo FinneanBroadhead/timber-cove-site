@@ -1,4 +1,3 @@
-
 a {
   text-decoration: none;
 }
@@ -19,10 +18,22 @@ a {
 
 .navbar {
   background-color: rgba(30, 29, 31, 0.7);
+  padding: 0px;
 }
 .navbar-collapse.show {
   background-color: rgba(30, 29, 31, 0.9);
   transition: 0.3s;
+}
+.nav-link {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  height: 100%;
+}
+nav ul li.active,
+.nav-link.active {
+  background: none !important;
+  background-color: none !important;
+  border-bottom: 3px solid white;
 }
 @media (max-width: 1200px) {
   .navbar {
