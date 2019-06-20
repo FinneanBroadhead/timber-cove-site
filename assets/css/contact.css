@@ -632,7 +632,7 @@ a {
   font-family: 'source-sans-pro', sans-serif;
   margin-top: 3%;
   text-align: center;
-  color: #2d3d55;
+  color: white;
 }
 
 .socials-container {
@@ -679,6 +679,7 @@ a {
   -webkit-transition-duration: 300ms;
   -o-transition-duration: 300ms;
   transition-duration: 300ms;
+  color: white;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -698,6 +699,7 @@ a {
 
 .single-service-area p {
   margin-bottom: 0;
+  color: white;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
