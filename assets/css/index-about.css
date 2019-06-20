@@ -9822,7 +9822,7 @@ screen and (min-width: 40em) {
 @media screen and (max-width: 39.9375em) {
 	.sidebyside .entry-content {
 		width: calc(100% - 5vw);
-		margin-left: 12.5vw;
+		/* margin-left: 12.5vw; */
 		margin-top: 12.5vw;
 		margin-bottom: 12.5vw
 	}

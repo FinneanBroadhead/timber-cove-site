@@ -853,7 +853,9 @@ section {
   position: absolute;
   transform: translateX(-50%);
 }
-
+#hello.medium-6 {
+  transform: translateX(-50%);
+}
 @media (orientation: portrait) {
   .tech-icon {
     display: none !important;
@@ -863,6 +865,7 @@ section {
 @media (max-width: 992px) {
   .grid-x > .medium-8 {
     width: 100% !important;
+    margin-top: 30px;
   }
 
   .tech-paragraph {
