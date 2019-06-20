@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="assets/css/quote-box.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/image-carousel.css">
 
   <link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon/favicon-32x32.png">
@@ -46,7 +47,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
 
   <script src="assets/js/quote-box.js"></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
@@ -56,6 +56,9 @@
   <script src="assets/js/room-boxes.js"></script>
   <script src="assets/js/jquery.scrollTo.min.js" type="text/javascript"></script>
   <script src="assets/js/jquery.localScroll.min.js" type="text/javascript"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/combine/npm/lightgallery,npm/lg-autoplay,npm/lg-fullscreen,npm/lg-hash,npm/lg-pager,npm/lg-share,npm/lg-thumbnail,npm/lg-video,npm/lg-zoom"></script>
   
 </head>
 
@@ -365,6 +368,17 @@
     </div>
 
   </section>
+
+  <div class="image-carousel">
+    <div id="lightgallery">
+      <a href="assets/imgs/hottub.jpg">
+          <img src="assets/imgs/hottub.jpg" />
+      </a>
+      <a href="assets/imgs/bunkroom_01.jpg">
+          <img src="assets/imgs/bunkroom_01.jpg" />
+      </a>
+    </div>
+  </div>
 
   <a id="4"></a>
   <section id="blueprint">

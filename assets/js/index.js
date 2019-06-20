@@ -14,6 +14,8 @@ $(document).ready(function() {
 		offset: 200,
 		easing: 'ease-out-quart'
 	});
+    
+    $("#lightgallery").lightGallery(); 
 })
 
 // function myMap() {
