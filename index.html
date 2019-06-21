@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/image-carousel.css">
-
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/favicon/favicon-16x16.png">
@@ -52,54 +52,55 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
   <script src="assets/js/aos.js"></script>
   <script src="assets/js/fab-button.js"></script>
-           
+
   <script src="assets/js/room-boxes.js"></script>
   <script src="assets/js/jquery.scrollTo.min.js" type="text/javascript"></script>
   <script src="assets/js/jquery.localScroll.min.js" type="text/javascript"></script>
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/combine/npm/lightgallery,npm/lg-autoplay,npm/lg-fullscreen,npm/lg-hash,npm/lg-pager,npm/lg-share,npm/lg-thumbnail,npm/lg-video,npm/lg-zoom"></script>
-  
+  <script
+    src="https://cdn.jsdelivr.net/combine/npm/lightgallery,npm/lg-autoplay,npm/lg-fullscreen,npm/lg-hash,npm/lg-pager,npm/lg-share,npm/lg-thumbnail,npm/lg-video,npm/lg-zoom">
+  </script>
+
 </head>
 
 <body>
 
- <!-- NAVIGATION SECTION -->
-  
+  <!-- NAVIGATION SECTION -->
 
- 
- <nav class="navbar navbar-expand-xl navbar-light fixed-top">
 
-  <!-- NAV BUTTON -->
-  <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/imgs/tc.png"/></a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top">
+
+    <!-- NAV BUTTON -->
+    <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/imgs/tc.png" /></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-  </button>
+    </button>
 
-  <!-- COLLAPSABLE NAV -->
+    <!-- COLLAPSABLE NAV -->
 
-  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto mr-auto mt-2 mt-md-0">
-            <li class="nav-link active"><a href="#1">Home</a></li>
-            <li class="nav-link"><a href="http://blog.timber-cove.com">Blog</a></li>
-            <li class="nav-link"><a href="#2">About</a></li>
-            <li class="nav-link"><a href="#3">Explore the Property</a></li>
-            <li class="nav-link"><a href="#4">Attractions</a></li>
-            <li class="nav-link"><a rel="lightgallery" data-src="assets/imgs/entryway.jpg" href="assets/imgs/entryway.jpg" >Gallery</a></li>
-            <li class="nav-link"><a href="contact.html">Contact</a></li>
+        <li class="nav-link active"><a href="#1">Home</a></li>
+        <li class="nav-link"><a href="http://blog.timber-cove.com">Blog</a></li>
+        <li class="nav-link"><a href="#2">About</a></li>
+        <li class="nav-link"><a href="#3">Explore the Property</a></li>
+        <li class="nav-link"><a href="#4">Attractions</a></li>
+        <li class="nav-link"><a href="contact.html">Contact</a></li>
 
-            <li class="nav-link"><a href="booking.html">Booking</a></li>
-        </ul>
-      </div>
-    </nav>
+        <li class="nav-link"><a href="https://www.vrbo.com/728578?adultsCount=15&noDates=true">Booking</a></li>
+      </ul>
+    </div>
+  </nav>
   <div class="fixed-action-btn">
     <a class="btn-floating btn-large blue">
       <i class="large material-icons">mode_edit</i>
     </a>
     <ul>
-      <li><a class="btn-floating blue"><i class="material-icons">schedule</i></a></li>
+      <li><a class="btn-floating blue" href="https://www.vrbo.com/728578?adultsCount=15&noDates=true"><i class="fa fa-calendar"></i></a></li>
       <li><a class="btn-floating red darken-1"><i class="fab fa-instagram"></i></a></li>
       <li><a class="btn-floating lightblue"><i class="fab fa-facebook"></i></a></li>
       <li><a class="btn-floating blue"><i class="fab fa-twitter"></i></a></li>
@@ -130,85 +131,97 @@
     <div class="frame">
       <div id="grid">
         <div id="lightgallery">
-        <div class="work-block case-study show" data-type="Entryway" data-src="assets/imgs/entryway.jpg"> <a href="#explore-the-home"> <img
-              class="object-fit" src="assets/imgs/entryway.jpg" alt="Entry Way">
-            <div class="work-info">
-              <p><span>Entryway</span><br></p>
-            </div>
-          </a></div>
-        <div class="work-block case-study show" data-type="Theater" data-src="assets/imgs/theater.jpg"> <a href="#explore-the-home">
-            <img class="object-fit" src="assets/imgs/theater.jpg" alt="Theater">
-            <div class="work-info">
-              <p><span>Theater</span><br></p>
-            </div>
-          </a></div>
-        <div class="work-block case-study show" data-type="Deck" data-src="assets/imgs/hottub.jpg"> <a href="#explore-the-home">
-            <img class="object-fit" src="assets/imgs/hottub.jpg" alt="Hot Tub">
-            <div class="work-info">
-              <p><span>Hot Tub</span><br></p>
-            </div>
-          </a></div>
-        <div class="work-block case-study show" data-type="Bunk Room" data-src="assets/imgs/bunkroom_01.jpg"> <a href="#explore-the-home">
-            <img class="object-fit" src="assets/imgs/bunkroom_01.jpg" alt="Bunkroom">
-            <div class="work-info">
-              <p><span>Bunk Room</span><br></p>
-            </div>
-          </a></div>
-        <div class="work-block case-study show" data-type="Library" data-src="assets/imgs/library.jpeg"> <a href="#explore-the-home">
-            <img class="object-fit" src="assets/imgs/library.jpeg" alt="Library">
-            <div class="work-info">
-              <p><span>Library</span><br></p>
-            </div>
-          </a></div>
-        <div class="work-block case-study show" data-type="Skybridge" data-src="assets/imgs/hallway.jpg"> <a href="#explore-the-home">
-            <img class="object-fit" src="assets/imgs/hallway.jpg"  alt="Skybridge">
-            <div class="work-info">
-              <p><span>Skybridge</span><br></p>
-            </div>
-          </a></div>
-        <div class="work-block case-study show" data-type="Pool" data-src="assets/imgs/pool.jpg"> <a href="#explore-the-home">
-            <img class="object-fit" src="assets/imgs/pool.jpg" alt="Pool">
-            <div class="work-info">
-              <p><span>Pool</span><br></p>
-            </div>
-          </a></div>
-        <div class="work-block case-study show" data-type="Gear Room" data-src="assets/imgs/gearroom.jpg"> <a href="#explore-the-home">
-            <img class="object-fit" src="assets/imgs/gearroom.jpg"data-src="Gear Room" alt="Social Media Agency for Business">
-            <div class="work-info">
-              <p><span>Gear Room</span><br></p>
-            </div>
-          </a></div>
-        <div class="work-block case-study show" data-type="Great Room" data-src="assets/imgs/greatroom.jpg"> <a href="#explore-the-home">
-            <img class="object-fit" src="assets/imgs/greatroom.jpg" alt="Great Room">
-            <div class="work-info">
-              <p><span>Great Room</span><br></p>
-            </div>
-          </a></div>
-        <div class="work-block case-study show" data-type="Situation Room" data-src="assets/imgs/situationroom.jpg"> <a href="#explore-the-home">
-            <img class="object-fit" src="assets/imgs/situationroom.jpg" alt="Situation Room">
-            <div class="work-info">
-              <p><span>Situation Room</span>
-            </div>
-          </a></div>
-        <div class="work-block case-study show" data-type="Deck" data-src="assets/imgs/deck.jpg"> <a href="#explore-the-home">
-            <img class="object-fit" src="assets/imgs/deck.jpg" alt="Hot Tub Deck">
-            <div class="work-info">
-              <p><span>Lake Deck</span><br></p>
-            </div>
-          </a></div>
-        <div class="work-block case-study show" data-type="Guest Bedroom" data-src="assets/imgs/guestbed.jpg"> <a href="#explore-the-home">
-            <img class="object-fit" src="assets/imgs/guestbed.jpg" alt="Guest Bedroom">
-            <div class="work-info">
-              <p><span></span>Guest Bedroom</p>
-            </div>
-          </a>
-        </div>
+          <div class="work-block case-study show" data-type="Entryway" data-src="assets/imgs/entryway.jpg"> <a
+              href="#explore-the-home"> <img class="object-fit" src="assets/imgs/entryway.jpg" alt="Entry Way">
+              <div class="work-info">
+                <p><span>Entryway</span><br></p>
+              </div>
+            </a></div>
+          <div class="work-block case-study show" data-type="Theater" data-src="assets/imgs/theater2.jpg"> <a
+              href="#explore-the-home">
+              <img class="object-fit" src="assets/imgs/theater2.jpg" alt="Theater">
+              <div class="work-info">
+                <p><span>Theater</span><br></p>
+              </div>
+            </a></div>
+          <div class="work-block case-study show" data-type="Deck" data-src="assets/imgs/hottub2.jpg"> <a
+              href="#explore-the-home">
+              <img class="object-fit" src="assets/imgs/hottub2.jpg" alt="Hot Tub">
+              <div class="work-info">
+                <p><span>Hot Tub</span><br></p>
+              </div>
+            </a></div>
+          <div class="work-block case-study show" data-type="Bunk Room" data-src="assets/imgs/bunkroom_01.jpg"> <a
+              href="#explore-the-home">
+              <img class="object-fit" src="assets/imgs/bunkroom_01.jpg" alt="Bunkroom">
+              <div class="work-info">
+                <p><span>Bunk Room</span><br></p>
+              </div>
+            </a></div>
+          <div class="work-block case-study show" data-type="Library" data-src="assets/imgs/library.jpeg"> <a
+              href="#explore-the-home">
+              <img class="object-fit" src="assets/imgs/library.jpeg" alt="Library">
+              <div class="work-info">
+                <p><span>Library</span><br></p>
+              </div>
+            </a></div>
+          <div class="work-block case-study show" data-type="Skybridge" data-src="assets/imgs/hallway.jpg"> <a
+              href="#explore-the-home">
+              <img class="object-fit" src="assets/imgs/hallway.jpg" alt="Skybridge">
+              <div class="work-info">
+                <p><span>Skybridge</span><br></p>
+              </div>
+            </a></div>
+          <div class="work-block case-study show" data-type="Pool" data-src="assets/imgs/pool.jpg"> <a
+              href="#explore-the-home">
+              <img class="object-fit" src="assets/imgs/pool.jpg" alt="Pool">
+              <div class="work-info">
+                <p><span>Pool</span><br></p>
+              </div>
+            </a></div>
+          <div class="work-block case-study show" data-type="Gear Room" data-src="assets/imgs/gearroom.jpg"> <a
+              href="#explore-the-home">
+              <img class="object-fit" src="assets/imgs/gearroom.jpg" data-src="Gear Room"
+                alt="Social Media Agency for Business">
+              <div class="work-info">
+                <p><span>Gear Room</span><br></p>
+              </div>
+            </a></div>
+          <div class="work-block case-study show" data-type="Great Room" data-src="assets/imgs/greatroom2.jpg"> <a
+              href="#explore-the-home">
+              <img class="object-fit" src="assets/imgs/greatroom2.jpg" alt="Great Room">
+              <div class="work-info">
+                <p><span>Great Room</span><br></p>
+              </div>
+            </a></div>
+          <div class="work-block case-study show" data-type="Situation Room" data-src="assets/imgs/situationroom.jpg">
+            <a href="#explore-the-home">
+              <img class="object-fit" src="assets/imgs/situationroom.jpg" alt="Situation Room">
+              <div class="work-info">
+                <p><span>Situation Room</span>
+              </div>
+            </a></div>
+          <div class="work-block case-study show" data-type="Deck" data-src="assets/imgs/deck.jpg"> <a
+              href="#explore-the-home">
+              <img class="object-fit" src="assets/imgs/deck.jpg" alt="Hot Tub Deck">
+              <div class="work-info">
+                <p><span>Lake Deck</span><br></p>
+              </div>
+            </a></div>
+          <div class="work-block case-study show" data-type="Guest Bedroom" data-src="assets/imgs/guestbed.jpg"> <a
+              href="#explore-the-home">
+              <img class="object-fit" src="assets/imgs/guestbed.jpg" alt="Guest Bedroom">
+              <div class="work-info">
+                <p><span></span>Guest Bedroom</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
     </div>
 
-    
+
 
   </section>
 
@@ -218,8 +231,8 @@
 
       <div class="heading-section">
         <div class="about-heading">
-          <h3 class="subheading">Unprecedented Mid-Century Modern Architecture</h2>
-            <h4 style="text-align: center;">The story behind <span class="highlight">Timber Cove</span></h4>
+          <h4 class="subheading">Unprecedented Mid-Century Modern Architecture</h4>
+          <h4 style="text-align: center;">The story behind <span class="highlight">Timber Cove</span></h4>
         </div>
       </div>
       <div class="container">
@@ -231,32 +244,30 @@
             <div class="testimonials">
               <div class="testimonial">
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid deleniti dolores quos cum error
-                  praesentium soluta sed eum. Commodi cupiditate laudantium accusamus quo voluptate iste quibusdam quasi
-                  placeat provident dolores.
+                  "This mountain retreat was selected by a panel of architects for the AIA Seattle (aiaseattle.org) Home
+                  of Distinction program in recognition of the careful consideration of scale and craftsmanship that is
+                  evident in every room, allowing the home to serve as both a relaxing retreat from city life and a
+                  functional base camp for outdoor activities."
                 </p>
                 <h6 class="author">
-                  - Lorem Ipsum
+                  - Seattle Magazine
                 </h6>
               </div>
               <div class="testimonial">
                 <p>
-                  Lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, voluptatum fugit
-                  fuga doloremque illo ab accusamus tempora sapiente facilis rem nemo aliquid perspiciatis, quidem porro
-                  amet eligendi autem! Accusantium, nesciunt. dolores.
+                  ""Mid-Century mountain' – works best when it is full of guests. Beyond its six bedrooms and a bunk room
+                  that sleeps 13, common areas give guests plenty of room to spread out and enjoy the views."
                 </p>
                 <h6 class="author">
-                  - Lorem Ipsum
+                  - The Wall Street Journal
                 </h6>
               </div>
               <div class="testimonial">
                 <p>
-                  Cheese apple sauce, big righteous slaughter gang in the elite. Aliquid deleniti dolores quos cum error
-                  praesentium soluta sed eum. Commodi cupiditate laudantium accusamus quo voluptate iste quibusdam quasi
-                  placeat provident dolores.
+                  "When I saw that piece of land, I knew it was a once-in-a-lifetime opportunity."
                 </p>
                 <h6 class="author">
-                  - Lorem Ipsum
+                  - Bill Broadhead (Creator and Owner)
                 </h6>
               </div>
             </div>
@@ -270,9 +281,10 @@
               <span class="img" style="background-image: url('assets/imgs/theater.jpg'); opacity: 1;"></span>
             </div>
 
-            <div class="cell small-16 medium-6 medium-offset-1 align-middle">
+            <div class="cell small-16 medium-6 medium-offset-1 ">
               <section class="entry-content lead" style="opacity: 1;">
-                <p style="color: white; width: 100%;"><span class="highlight"><strong>Designed by Ray Johnston
+                <p style="color: white; width: 100%; text-align: center"><span class="highlight"><strong>Designed by Ray
+                      Johnston
                       Architects,</strong></span> Timber Cove
                   exudes the playfulness and optimism of a young family with a palpable sense of adventure. The
                   concept
@@ -280,7 +292,7 @@
                   was
                   conceived as a place to recharge between milestones in life. The spatial organization allows one
                   to
-                  reorient and reconnect with nature between activities. Basecamp provides distinct zones while
+                  reorient and reconnect with nature between activities. Timber Cove provides distinct zones while
                   blurring
                   boundaries.
 
@@ -293,18 +305,20 @@
 
             <div class="grid-x sidebyside complex thumb-len-3">
               <div class="cell small-16 medium-8">
-                <span class="img" style="background-image: url(assets/imgs/situationroombig.jpg); opacity: 1;"></span>
+                <span class="img" style="background-image: url(assets/imgs/situationroom2.jpg); opacity: 1;"></span>
               </div>
               <div class="cell small-16 medium-8">
-                <span class="img thumb" style="background-image: url(assets/imgs/about-bg-old.jpg); opacity: 1;"></span>
+                <span class="img thumb" style="background-image: url(assets/imgs/sideview.jpg); opacity: 1;"></span>
                 <span class="img thumb" style="background-image: url(assets/imgs/library.jpeg); opacity: 1;"></span>
 
                 <section class="entry-content lead" style="overflow: visible !important; opacity: 1;">
-                  <h2 style=" text-align: center; overflow: show !important; margin-bottom: 6vh !important;align-self: baseline"><span
-                      class="highlight">Modern Human
+                  <h3
+                    style=" text-align: center; overflow: show !important; margin-bottom: 6vh !important;align-self: baseline">
+                    <span class="highlight">Modern Human
                       Spaces</span>
-                  </h2>
-                  <p style="color: white; z-index: 999; overflow: visible;"><span class="highlight"><strong>Timber Cove </strong></span>is
+                  </h3>
+                  <p style="color: white; z-index: 999; overflow: visible;"><span class="highlight"><strong>Timber Cove
+                      </strong></span>is
                     situational
                     modernism — a subject-based,
                     humanist approach that considers a project through the aspirations of a client, the
@@ -339,6 +353,8 @@
           store it in large, underground, insulated tanks,” says Architect, Ray Johnston “Those tanks are
           essentially a giant
           hot water battery that we pull heat from during colder and darker months. </p>
+
+        <span class="highlight"> - Seattle Magazine</span>
         <div class="tech-icon">
           <i class="fas fa-globe-europe"></i>
         </div>
@@ -351,7 +367,7 @@
     <div id="interactive-map">
       <div class="interactive-map-intro">
         <div class="text-container">
-          <h2 class="subheading">Take a look around for yourself</h2>
+          <h4 class="subheading">Take a look around for yourself</h4>
           <p>Use our custom web-app to look around the best rooms in the home.</p>
           <p class="subtext"><small><i class="fas fa-info"></i> Scroll to zoom, click a waypoint to view more
               information about that room.</small></p>
@@ -379,7 +395,7 @@
     <div id="interactive-map" class="attraction-map">
       <div class="interactive-map-intro">
         <div class="text-container">
-          <h2>Local Attractions Near Timber Cove</h2>
+          <h4>Local Attractions Near Timber Cove</h4>
           <p>Use our custom map to look around the area to find places to eat or things to do.</p>
           <p class="subtext"><small><i class="fas fa-info"></i> Scroll or pinch to zoom, click a waypoint to view
               more
@@ -389,224 +405,23 @@
         <i class="fas fa-map-marked-alt showcase-icon"></i>
       </div>
       <div class="map-background"></div>
-      <div id="iframe-row">
-        <div id="iframe-container">
-          <div id='map'></div>
-          <script>
-            mapboxgl.accessToken =
-              'pk.eyJ1Ijoib2xmaW5ueXR3b3RpbWUiLCJhIjoiY2p0YnAybGVwMG8zeDQzcDdhaWN6dHBzYiJ9.cooh7deSYjLvZtIHCA06PA';
-            var map = new mapboxgl.Map({
-              container: 'map',
-              style: 'mapbox://styles/mapbox/streets-v9',
-              center: [-121.102323, 47.286711],
-              zoom: 10.15
-            });
-            map.on('load', function () {
-              // Add a layer showing the places.
-              map.addLayer({
-                "id": "places",
-                "type": "symbol",
-                "source": {
-                  "type": "geojson",
-                  "data": {
-                    "type": "FeatureCollection",
-                    "features": [{
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<p><a href=\"#\" target=\"_blank\" title=\"Opens in a new window\">Timber Cove</a><br>Where the Property Resides</p>",
-                          "icon": "star"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-121.102323, 47.286711]
-                        }
-                      }, {
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Cascade Playtime</a><br>Motorsports and mountain activities rental shop. </p>",
-                          "icon": "snowmobile"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-121.074068, 47.273818]
-                        }
-                      }, {
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Hex Mountain Hiking Trail</a><br>Touted as the worlds best snowshoeing trail, this is a great year round hike that is great for snowmobiling, cross country skiing or maybe just a leisurely walk.  </p>",
-                          "icon": "bicycle"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-121.097482, 47.292557]
-                        }
-                      }, {
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Village Pizza</a><br>This pizza place is known as one the best restaurants in the area, serving fresh hot pizza all day. </p>",
-                          "icon": "restaurant"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-120.993580, 47.223153]
-                        }
-                      }, {
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<strong>The Brick Bar and Restaurant</strong><p>This bar has been in Roslyn since the 1800s, the saloon also features live performances from a range of artists.<a href=\"http://www.bricksaloon.com/\" target=\"_blank\" title=\"Opens in a new window\"></p>",
-                          "icon": "bar"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-120.992586, 47.222930]
-                        }
-                      }, {
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<strong>French Cabin Campground</strong><p>This popular local camping spot features natural a great open area thats perfect for motorized or non motorized recreation or maybe pitching a tent for the night or there is some amazing places to hike around this area.<a href=\"http://www.bricksaloon.com/\" target=\"_blank\" title=\"Opens in a new window\"></p>",
-                          "icon": "picnic-site"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-121.113994, 47.354595]
-                        }
-                      },
-                      {
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<strong>Speelyi Beach Park</strong><p>This beautiful beach both serves and a boat launch and an amazing place to set up shop and relax and soak in the beach weather.<p><a href=\"http://www.bricksaloon.com/\" target=\"_blank\" title=\"Opens in a new window\"></p>",
-                          "icon": "swimming"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-121.063417, 47.253331]
-                        }
-                      },
-                      {
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<strong>Prospecter Golf Course</strong><a href=\"https://www.google.com/maps/place/Prospector+Golf+Course/@47.2083343,-121.016085,17z/data=!3m1!4b1!4m5!3m4!1s0x549a0e47cba04b1b:0xd76603f969662496!8m2!3d47.2083307!4d-121.0138963\" target=\"_blank\" title=\"Opens in a new window\"><p>This golf course is inside of the prestigious Suncadia Golf Resort, around the course are driving ranges and any amenity you would ever need</p>",
-                          "icon": "golf"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-121.011818, 47.209014]
-                        }
-                      },
-                      {
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<a href=\"https://www.google.com/maps/place/Tumble+Creek+Club/@47.2172857,-121.0494876,15.34z/data=!4m8!1m2!2m1!1sTumble+Creek+Golf+Course+!3m4!1s0x0:0x9797d9a0d98f8e8b!8m2!3d47.2137127!4d-121.0486293\" target=\"_blank\" title=\"Opens in a new window\"><strong>Tumble Creek Golf Course</strong><p>The Tumble Creek golf course like Suncadia, resides inside of it's parents clubhouse/resort. This course is similar in difficulty to the Prospector course and features the same amenities that Prospecter has.</p>",
-                          "icon": "golf"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-121.048264, 47.213782]
-                        }
-                      },
-                      {
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<strong>Suncadia Swimming Center</strong><a href=\"https://www.google.com/maps/place/Suncadia+Swim+%26+Fitness+Center/@47.20911,-121.0209809,17z/data=!4m12!1m6!3m5!1s0x549a0e47cba04beb:0xe000fec028c3d4e8!2sSuncadia+Resort!8m2!3d47.2091067!4d-121.0187924!3m4!1s0x549a0e4120ac47c1:0x1c4f2ee5aaa50c27!8m2!3d47.2102045!4d-121.0156207/\" target=\"_blank\" title=\"Opens in a new window\"><p>This massive Swimming facility is great for the whole family because there's something for everyone to do, any age. Theres a calming steam room/sauna, a hot tub, two massive multi story waterslides and finally a few very large pools.</p>",
-                          "icon": "swimming"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-121.012927, 47.211112]
-                        }
-                      },
-                      {
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<strong>Swimming Area</strong> Great swimming area for the whole family that features natural waterslides that shoot you down at a high speed. This area can be dangerous however in seasons of high flow. Considering the weather permits, this is a great destination to visit for the mountain thrill seeker.<p><a href=\"#\" target=\"_blank\" title=\"Opens in a new window\"></p>",
-                          "icon": "swimming"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-121.094853, 47.384011]
-                        }
-                      },
-                      {
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<strong>Suncadia Resort</strong><a href=\"https://www.google.com/maps/place/Suncadia+Resort/@47.20911,-121.0209809,17z/data=!3m1!4b1!4m5!3m4!1s0x549a0e47cba04beb:0xe000fec028c3d4e8!8m2!3d47.2091067!4d-121.0187924/\" target=\"_blank\" title=\"Opens in a new window\"><p>The Suncadia Resort is a great destination for those of in search of a very high class dining experience or maybe want to get drinks. </p>",
-                          "icon": "restaurant"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-121.016553, 47.209796]
-                        }
-                      },
-                      {
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<strong>The Red Bird Cafe</strong><a href=\"https://www.google.com/maps/place/The+Red+Bird+Cafe+%26+Bakery/@47.2229443,-120.9951211,17z/data=!3m1!4b1!4m5!3m4!1s0x549a0e1fbb0f9caf:0xf2fa0f47f5ca111e!8m2!3d47.2229407!4d-120.9929324/\" target=\"_blank\" title=\"Opens in a new window\"><p>This cute little cafe is a delicious restaurant that mainly serves hand made sandwiched and hand cooked bakery goods. You can also get a beer, an italian soda or maybe old fashioned cafe.</p>",
-                          "icon": "restaurant"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-120.992858, 47.222973]
-                        }
-                      }, {
-                        "type": "Feature",
-                        "properties": {
-                          "description": "<p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">The Cottage Cafe</a><br>The Cottage Cafe is a local (mainly) breakfast diner where you can get great pancakes all day and dinner if you choose. </p>",
-                          "icon": "restaurant"
-                        },
-                        "geometry": {
-                          "type": "Point",
-                          "coordinates": [-120.919258, 47.192930],
-                        }
-                      }
-                    ]
-                  }
-                },
-
-
-                "layout": {
-                  "icon-image": "{icon}-15",
-                  "icon-allow-overlap": true
-                }
-              });
-              // When a click event occurs on a feature in the places layer, open a popup at the
-              // location of the feature, with description HTML from its properties.
-              map.on('click', 'places', function (e) {
-                var coordinates = e.features[0].geometry.coordinates.slice();
-                var description = e.features[0].properties.description;
-                // Ensure that if the map is zoomed out such that multiple
-                // copies of the feature are visible, the popup appears
-                // over the copy being pointed to.
-                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-                  coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-                }
-                new mapboxgl.Popup()
-                  .setLngLat(coordinates)
-                  .setHTML(description)
-                  .addTo(map);
-              });
-              // Change the cursor to a pointer when the mouse is over the places layer.
-              map.on('mouseenter', 'places', function () {
-                map.getCanvas().style.cursor = 'pointer';
-              });
-              // Change it back to a pointer when it leaves.
-              map.on('mouseleave', 'places', function () {
-                map.getCanvas().style.cursor = '';
-              });
-            });
-          </script>
+          <div id="iframe-row">
+          <div id="iframe-container">
+            <iframe id="mapframe" width="100%" height="400px" class="map-iframe" src="map-index.html" frameborder="0"
+              scrolling="no"></iframe>
+          </div>
         </div>
-      </div>
-    </div>
-    <a id="blog"></a>
-    <div id="iframe-row">
-      <div id="iframe-container">
-        <!-- <iFrame class="map-iframe" src="“ width=“100%” height=”300px” frameborder=”1”
+  </section>
+  <a id="blog"></a>
+  <div id="iframe-row">
+    <div id="iframe-container">
+      <!-- <iFrame class="map-iframe" src="“ width=“100%” height=”300px” frameborder=”1”
         scrolling=“yes”></iFrame> -->
-        <iframe id="mapframe" class="map-iframe wordpressframe" src="http://blog.timber-cove.com"
-          frameborder="0"></iframe>
+      <iframe id="mapframe" class="map-iframe wordpressframe" src="http://blog.timber-cove.com"
+        frameborder="0"></iframe>
 
-      </div>
     </div>
+  </div>
   </section>
   </div>
 

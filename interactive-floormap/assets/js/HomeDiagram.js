@@ -140,18 +140,18 @@ function createHomeDiagram() {
         }
     }
 
-    HomeDiagram.scrollY = function(amount) {
-        // Cap amount
-        if (amount > 0.5) {
-            amount = 0.5;
-        }
-        else if (amount < -0.5) {
-            amount = -0.5;
-        }
+    // HomeDiagram.scrollY = function(amount) {
+    //     // Cap amount
+    //     if (amount > 0.5) {
+    //         amount = 0.5;
+    //     }
+    //     else if (amount < -0.5) {
+    //         amount = -0.5;
+    //     }
 
-        // Add amount to target zoom
-        this.targetZoomScaleY += (amount / this.zoomSpeedDivisor);
-    }
+    //     // Add amount to target zoom
+    //     this.targetZoomScaleY += (amount / this.zoomSpeedDivisor);
+    // }
 
     // Initialize
     HomeDiagram.init();

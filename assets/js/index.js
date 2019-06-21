@@ -16,7 +16,13 @@ $(document).ready(function() {
 	});
     
     $("#lightgallery").lightGallery(); 
-})
+    // $('#selector2').lightGallery({
+    //     selector: '(#lightgallery'
+    // // });
+    // $('#selector2').on('click', function() {
+    //     return $("#lightgallery").lightGallery() 
+
+});
 
 // function myMap() {
 //     var mapOptions = {

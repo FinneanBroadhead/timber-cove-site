@@ -6490,7 +6490,6 @@ screen and (min-width: 64em) {
 	-ms-flex-direction: column-reverse;
 	flex-direction: column-reverse
 }
-
 @media print,
 screen and (min-width: 40em) {
 	.medium-flex-container {
@@ -6767,7 +6766,7 @@ h5,
 .h5,
 h6,
 .h6 {
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Montserrat',sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	color: inherit;
@@ -6800,7 +6799,7 @@ h1,
 
 h2,
 .h2 {
-	font-size: 3rem;
+	font-size: 1.7rem;
 	line-height: 1;
 	margin-top: .05rem;
 	margin-bottom: .75rem
@@ -10808,7 +10807,7 @@ screen and (min-width: 40em) {
 }
 
 #newsfeed h2 {
-	font-size: 4rem;
+	/* font-size: 4rem; */
 	color: #eaeaeb;
 	margin-bottom: -.05em
 }

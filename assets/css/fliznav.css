@@ -43,7 +43,10 @@ nav ul li.active,
     background-color: rgba(30, 29, 31, 1.0);
   }
 }
-
+/* // this is a white icon with 50% opacity */
+span.navbar-toggler-icon {
+  background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5");
+}
 .air-descrip {
   letter-spacing: -0.8px;
 }

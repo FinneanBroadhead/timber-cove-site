@@ -37,11 +37,11 @@ body {
   overflow-x: hidden !important;
   width: 100%;
   height: 100vh;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(125, 185, 232, .2) 100%);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(125, 185, 232, .2) 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(125, 185, 232, .2) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(125, 185, 232, .2) 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(125, 185, 232, .2) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(125, 185, 232, .2) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#65696d', endColorstr='#007db9e8', GradientType=0);
   /* IE6-9 */
@@ -124,7 +124,7 @@ body {
 .contact-icon {
   font-size: 35px;
   position: absolute;
-
+text-align: center;
   align-self: center;
   color: var(--darkorange);
   top: -40px;

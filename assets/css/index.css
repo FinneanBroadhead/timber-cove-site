@@ -64,7 +64,7 @@ section {
 }
 
 .jumbo-heading {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 6em;
   line-break: loose;
   position: relative;
@@ -103,7 +103,7 @@ section {
 }
 
 .about-heading .heading {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2vw;
   line-break: loose;
   position: relative;
@@ -138,7 +138,7 @@ section {
 
 .heading-2 {
   font-size: 4vh;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   text-transform: uppercase;
   text-shadow: 0px 1px 1px #fff, 0px 2px 1px #d6d6d6, 0px 3px 1px #ccc,
